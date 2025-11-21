@@ -41,7 +41,7 @@ lab2-weather-analytics-pipeline/
 │           └── weather_analytics.sql # Final transformation table
 ├── docker-compose-min.yml           # Airflow configuration with dbt volume mapping
 └── README.md                        # Project documentation
-
+```
 ## Execution Steps
 
 Step 1: Run ETL
