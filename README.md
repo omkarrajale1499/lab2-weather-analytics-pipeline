@@ -25,6 +25,7 @@ The pipeline consists of the following stages:
 ## Project Structure
 This repository follows a clean structure separating Airflow DAGs and dbt models.
 
+```text
 lab2-weather-analytics-pipeline/
 ├── dags/
 │   ├── open_meteo_weather_etl.py    # DAG 1: ETL (API -> Snowflake)
