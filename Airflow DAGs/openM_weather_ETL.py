@@ -7,7 +7,7 @@ import pandas as pd
 
 # --- Configuration ---
 SNOWFLAKE_CONN_ID = "snowflake_conn"
-# We load into the RAW schema as per requirements
+# Loading into the RAW schema
 TARGET_TABLE = "RAW.WEATHER_HISTORY"
 URL = "https://archive-api.open-meteo.com/v1/archive"
 
@@ -30,7 +30,7 @@ default_args = {
 with DAG(
     dag_id="open_meteo_weather_etl",
     start_date=datetime(2024, 1, 1),
-    schedule="@once", # Set to @daily if you want it recursive, but @once is fine for historical load
+    schedule="@once", 
     catchup=False,
     default_args=default_args,
     description="Fetch 1 year of weather data from OpenMeteo and Full Refresh Snowflake",
@@ -48,7 +48,7 @@ with DAG(
         # The API returns data in a 'daily' dictionary with lists
         daily_data = data['daily']
         
-        # Convert to DataFrame for easy handling
+        # Convert to DataFrame
         df = pd.DataFrame(daily_data)
         
         # Rename columns to match our Snowflake expectations

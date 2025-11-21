@@ -3,9 +3,9 @@ from airflow import DAG
 from airflow.operators.bash import BashOperator
 from airflow.hooks.base import BaseHook
 
-# Define the path where your dbt project lives inside the Airflow container
+# Defining the path for dbt project inside the Airflow container
 DBT_PROJECT_DIR = "/opt/airflow/dbt"
-DBT_PROFILES_DIR = "/opt/airflow/dbt" # Assuming profiles.yml is here too
+DBT_PROFILES_DIR = "/opt/airflow/dbt" 
 
 conn = BaseHook.get_connection('snowflake_conn')
 
@@ -29,7 +29,7 @@ default_args = {
 with DAG(
     "dbt_transformation_dag",
     default_args=default_args,
-    schedule=None, # Run this manually after the ETL DAG finishes
+    schedule=None,
     description="Run dbt transformations for Weather Data",
 ) as dag:
 
