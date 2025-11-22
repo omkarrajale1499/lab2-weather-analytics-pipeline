@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: weather_analytics
+    description: "Derived weather metrics"
+    columns:
+      - name: forecast_date
+        description: "Primary key for daily weather"
+        tests:
+          - unique
+          - not_null
