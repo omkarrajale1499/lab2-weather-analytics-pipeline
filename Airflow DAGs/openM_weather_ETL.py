@@ -1,6 +1,7 @@
 from airflow import DAG
 from airflow.decorators import task
 from airflow.providers.snowflake.hooks.snowflake import SnowflakeHook
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 from datetime import datetime, timedelta
 import requests
 import pandas as pd
@@ -30,7 +31,7 @@ default_args = {
 with DAG(
     dag_id="open_meteo_weather_etl",
     start_date=datetime(2024, 1, 1),
-    schedule="@once", 
+    schedule="0 7 * * *", 
     catchup=False,
     default_args=default_args,
     description="Fetch 1 year of weather data from OpenMeteo and Full Refresh Snowflake",
@@ -124,6 +125,14 @@ with DAG(
             cur.close()
             conn.close()
 
-    # Define Task Dependencies
+    trigger_dbt = TriggerDagRunOperator(
+        task_id="trigger_dbt_transformation",
+        trigger_dag_id="dbt_transformation_dag",
+        wait_for_completion=False
+    )
+
+    
     weather_data = extract_weather_data()
-    load_to_snowflake(weather_data)
+    load_task = load_to_snowflake(weather_data)
+
+    load_task >> trigger_dbt
