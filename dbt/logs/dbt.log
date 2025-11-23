@@ -1,0 +1,2197 @@
+[0m21:33:34.975153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a170400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b210160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b210460>]}
+
+
+============================== 21:33:34.980028 | f2d86591-6435-4c54-8cce-6ac2691707f1 ==============================
+[0m21:33:34.980028 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m21:33:34.980385 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'introspect': 'True', 'invocation_command': 'dbt debug --config-dir', 'indirect_selection': 'eager', 'target_path': 'None', 'printer_width': '80', 'profiles_dir': '/Users/spartan/.dbt', 'use_colors': 'True', 'fail_fast': 'False', 'quiet': 'False', 'version_check': 'True', 'log_format': 'default', 'empty': 'None', 'log_cache_events': 'False', 'no_print': 'None', 'log_path': '/Users/spartan/Desktop/DATA 226/Assignments/LAB_2/my_weather_project/logs', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'static_parser': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'write_json': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:33:35.006755 [info ] [MainThread]: To view your profiles.yml file, run:
+
+open /Users/spartan/.dbt
+[0m21:33:35.009701 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.100598045, "process_in_blocks": "0", "process_kernel_time": 0.310385, "process_mem_max_rss": "98484224", "process_out_blocks": "0", "process_user_time": 0.905255}
+[0m21:33:35.009951 [debug] [MainThread]: Command `dbt debug` succeeded at 21:33:35.009901 after 0.10 seconds
+[0m21:33:35.010126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a170400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1e3f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1bc160>]}
+[0m21:33:35.010301 [debug] [MainThread]: Flushing usage events
+[0m21:33:35.428267 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:13:10.632145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8944ede0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff89e6ede0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8a146390>]}
+
+
+============================== 06:13:10.636479 | 111acd08-8d7d-4789-87d1-223f3ac92fff ==============================
+[0m06:13:10.636479 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m06:13:10.636742 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'use_colors': 'True', 'static_parser': 'True', 'write_json': 'True', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'log_path': '/opt/airflow/dbt/logs', 'use_experimental_parser': 'False', 'target_path': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_cache_events': 'False', 'profiles_dir': '/opt/airflow/dbt', 'printer_width': '80', 'cache_selected_only': 'False', 'log_format': 'default', 'quiet': 'False', 'partial_parse': 'True', 'empty': 'False', 'debug': 'False', 'introspect': 'True'}
+[0m06:13:11.211567 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m06:13:11.211863 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m06:13:11.212165 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m06:13:11.355945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '111acd08-8d7d-4789-87d1-223f3ac92fff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff69d1f8f0>]}
+[0m06:13:11.386217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '111acd08-8d7d-4789-87d1-223f3ac92fff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff689d1eb0>]}
+[0m06:13:11.386592 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m06:13:11.427924 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m06:13:11.429000 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m06:13:11.429180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '111acd08-8d7d-4789-87d1-223f3ac92fff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff68604200>]}
+[0m06:13:11.441235 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading my_weather_project: staging/sources.yaml - Runtime Error
+    Syntax error near line 2
+    ------------------------------
+    1  | {\rtf1\ansi\ansicpg1252\cocoartf2867
+    2  | \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+    3  | {\colortbl;\red255\green255\blue255;}
+    4  | {\*\expandedcolortbl;;}
+    5  | \margl1440\margr1440\vieww11520\viewh8400\viewkind0
+    
+    Raw Error:
+    ------------------------------
+    while parsing a flow mapping
+      in "<unicode string>", line 1, column 1
+    did not find expected ',' or '}'
+      in "<unicode string>", line 2, column 34
+[0m06:13:11.441916 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.84259033, "process_in_blocks": "37168", "process_kernel_time": 0.236723, "process_mem_max_rss": "207552", "process_out_blocks": "11254", "process_user_time": 2.334862}
+[0m06:13:11.442765 [debug] [MainThread]: Command `dbt run` failed at 06:13:11.442716 after 0.84 seconds
+[0m06:13:11.442950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff89266960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff69092270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff68606060>]}
+[0m06:13:11.443099 [debug] [MainThread]: Flushing usage events
+[0m06:13:11.855187 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:21:25.666091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff91462f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff903e4aa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9042d4f0>]}
+
+
+============================== 06:21:25.670104 | 7abfe63b-a119-4ac9-885c-235395fe2136 ==============================
+[0m06:21:25.670104 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m06:21:25.670374 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'printer_width': '80', 'target_path': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/opt/airflow/dbt', 'no_print': 'None', 'quiet': 'False', 'static_parser': 'True', 'log_path': '/opt/airflow/dbt/logs', 'partial_parse': 'True', 'version_check': 'True', 'debug': 'False', 'log_cache_events': 'False', 'use_colors': 'True', 'introspect': 'True', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None'}
+[0m06:21:25.992844 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m06:21:25.993147 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m06:21:25.993280 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m06:21:26.087281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7abfe63b-a119-4ac9-885c-235395fe2136', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff901c9af0>]}
+[0m06:21:26.117372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7abfe63b-a119-4ac9-885c-235395fe2136', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff83cf7ec0>]}
+[0m06:21:26.117818 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m06:21:26.167044 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m06:21:26.168237 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m06:21:26.168405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7abfe63b-a119-4ac9-885c-235395fe2136', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90264a10>]}
+[0m06:21:26.179701 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading my_weather_project: staging/sources.yaml - Runtime Error
+    Syntax error near line 2
+    ------------------------------
+    1  | {\rtf1\ansi\ansicpg1252\cocoartf2867
+    2  | \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+    3  | {\colortbl;\red255\green255\blue255;}
+    4  | {\*\expandedcolortbl;;}
+    5  | \margl1440\margr1440\vieww11520\viewh8400\viewkind0
+    
+    Raw Error:
+    ------------------------------
+    while parsing a flow mapping
+      in "<unicode string>", line 1, column 1
+    did not find expected ',' or '}'
+      in "<unicode string>", line 2, column 34
+[0m06:21:26.180283 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.5686672, "process_in_blocks": "9872", "process_kernel_time": 0.246919, "process_mem_max_rss": "205720", "process_out_blocks": "6", "process_user_time": 2.028558}
+[0m06:21:26.180664 [debug] [MainThread]: Command `dbt run` failed at 06:21:26.180621 after 0.57 seconds
+[0m06:21:26.181156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff933752b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6f9e8da0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90209f40>]}
+[0m06:21:26.181431 [debug] [MainThread]: Flushing usage events
+[0m06:21:26.623735 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:26:01.525878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff94677290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff935f7e00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9424fa40>]}
+
+
+============================== 06:26:01.530207 | 79efd75c-0bce-45c1-976a-77dbe087f04e ==============================
+[0m06:26:01.530207 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m06:26:01.530601 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'write_json': 'True', 'debug': 'False', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt', 'partial_parse': 'True', 'target_path': 'None', 'empty': 'False', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_path': '/opt/airflow/dbt/logs', 'use_experimental_parser': 'False', 'version_check': 'True', 'use_colors': 'True', 'static_parser': 'True', 'cache_selected_only': 'False', 'printer_width': '80', 'log_format': 'default', 'profiles_dir': '/opt/airflow/dbt', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True'}
+[0m06:26:01.864608 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m06:26:01.865099 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m06:26:01.865333 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m06:26:01.959212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '79efd75c-0bce-45c1-976a-77dbe087f04e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff93ca9be0>]}
+[0m06:26:01.992596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '79efd75c-0bce-45c1-976a-77dbe087f04e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff93da9e80>]}
+[0m06:26:01.993095 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m06:26:02.037765 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m06:26:02.038874 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m06:26:02.039089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '79efd75c-0bce-45c1-976a-77dbe087f04e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff73f678f0>]}
+[0m06:26:02.611603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '79efd75c-0bce-45c1-976a-77dbe087f04e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff711247a0>]}
+[0m06:26:02.647982 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m06:26:02.650234 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m06:26:02.688183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '79efd75c-0bce-45c1-976a-77dbe087f04e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff711a2360>]}
+[0m06:26:02.688470 [info ] [MainThread]: Found 4 models, 4 data tests, 1 source, 504 macros
+[0m06:26:02.688631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '79efd75c-0bce-45c1-976a-77dbe087f04e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff726c0ec0>]}
+[0m06:26:02.689576 [info ] [MainThread]: 
+[0m06:26:02.689843 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m06:26:02.690010 [info ] [MainThread]: 
+[0m06:26:02.690275 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m06:26:02.692253 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_POODLE'
+[0m06:26:02.714622 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE"
+[0m06:26:02.714859 [debug] [ThreadPool]: On list_USER_DB_POODLE: show terse schemas in database USER_DB_POODLE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE"} */
+[0m06:26:02.715010 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:26:03.625450 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.910 seconds
+[0m06:26:03.631318 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE"
+[0m06:26:03.631843 [debug] [ThreadPool]: On list_USER_DB_POODLE: show terse schemas in database USER_DB_POODLE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE"} */
+[0m06:26:03.747149 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.115 seconds
+[0m06:26:03.750439 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE, now create_USER_DB_POODLE_ANALYTICS_staging)
+[0m06:26:03.751298 [debug] [ThreadPool]: Creating schema "database: "USER_DB_POODLE"
+schema: "ANALYTICS_staging"
+"
+[0m06:26:03.758885 [debug] [ThreadPool]: Using snowflake connection "create_USER_DB_POODLE_ANALYTICS_staging"
+[0m06:26:03.759587 [debug] [ThreadPool]: On create_USER_DB_POODLE_ANALYTICS_staging: create schema if not exists USER_DB_POODLE.ANALYTICS_staging
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "create_USER_DB_POODLE_ANALYTICS_staging"} */
+[0m06:26:03.897107 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.137 seconds
+[0m06:26:03.899590 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_USER_DB_POODLE_ANALYTICS_staging, now list_USER_DB_POODLE_ANALYTICS)
+[0m06:26:03.909468 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS"
+[0m06:26:03.909769 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS: show objects in USER_DB_POODLE.ANALYTICS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS"} */;
+[0m06:26:04.120656 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.210 seconds
+[0m06:26:04.124325 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS, now list_USER_DB_POODLE_ANALYTICS_staging)
+[0m06:26:04.129644 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS_staging"
+[0m06:26:04.130241 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS_staging: show objects in USER_DB_POODLE.ANALYTICS_staging
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS_staging"} */;
+[0m06:26:04.264412 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.134 seconds
+[0m06:26:04.268053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '79efd75c-0bce-45c1-976a-77dbe087f04e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff93c4b9e0>]}
+[0m06:26:04.278573 [debug] [Thread-1 (]: Began running node model.my_weather_project.my_first_dbt_model
+[0m06:26:04.279323 [info ] [Thread-1 (]: 1 of 4 START sql table model ANALYTICS.my_first_dbt_model ...................... [RUN]
+[0m06:26:04.280012 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS_staging, now model.my_weather_project.my_first_dbt_model)
+[0m06:26:04.280856 [debug] [Thread-1 (]: Began compiling node model.my_weather_project.my_first_dbt_model
+[0m06:26:04.288333 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_weather_project.my_first_dbt_model"
+[0m06:26:04.294105 [debug] [Thread-1 (]: Began executing node model.my_weather_project.my_first_dbt_model
+[0m06:26:04.314409 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_weather_project.my_first_dbt_model"
+[0m06:26:04.317703 [debug] [Thread-1 (]: Using snowflake connection "model.my_weather_project.my_first_dbt_model"
+[0m06:26:04.317965 [debug] [Thread-1 (]: On model.my_weather_project.my_first_dbt_model: create or replace transient table USER_DB_POODLE.ANALYTICS.my_first_dbt_model
+    
+    
+    
+    as (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "model.my_weather_project.my_first_dbt_model"} */;
+[0m06:26:05.620557 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.302 seconds
+[0m06:26:05.633924 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79efd75c-0bce-45c1-976a-77dbe087f04e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff95f54350>]}
+[0m06:26:05.634517 [info ] [Thread-1 (]: 1 of 4 OK created sql table model ANALYTICS.my_first_dbt_model ................. [[32mSUCCESS 1[0m in 1.35s]
+[0m06:26:05.635246 [debug] [Thread-1 (]: Finished running node model.my_weather_project.my_first_dbt_model
+[0m06:26:05.636474 [debug] [Thread-1 (]: Began running node model.my_weather_project.stg_weather
+[0m06:26:05.637148 [info ] [Thread-1 (]: 2 of 4 START sql view model ANALYTICS_staging.stg_weather ...................... [RUN]
+[0m06:26:05.637695 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_weather_project.my_first_dbt_model, now model.my_weather_project.stg_weather)
+[0m06:26:05.638794 [debug] [Thread-1 (]: Began compiling node model.my_weather_project.stg_weather
+[0m06:26:05.641351 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_weather_project.stg_weather"
+[0m06:26:05.643249 [debug] [Thread-1 (]: Began executing node model.my_weather_project.stg_weather
+[0m06:26:05.659060 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_weather_project.stg_weather"
+[0m06:26:05.662232 [debug] [Thread-1 (]: Using snowflake connection "model.my_weather_project.stg_weather"
+[0m06:26:05.662548 [debug] [Thread-1 (]: On model.my_weather_project.stg_weather: create or replace   view USER_DB_POODLE.ANALYTICS_staging.stg_weather
+  
+  
+  
+  
+  as (
+    {\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "model.my_weather_project.stg_weather"} */;
+[0m06:26:05.770146 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01c088a2-0307-1706-000f-c0df00858eda
+[0m06:26:05.770555 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 7 at position 4 unexpected '{'.
+parse error line 7 at position 11 near '97'.
+parse error line 7 at position 16 near '97'.
+parse error line 7 at position 28 near '99'.
+parse error line 8 at position 19 near '99'.
+parse error line 8 at position 43 near '102'.
+parse error line 8 at position 53 near '102'.
+[0m06:26:05.772297 [debug] [Thread-1 (]: Database Error in model stg_weather (models/staging/stg_weather.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 7 at position 4 unexpected '{'.
+  parse error line 7 at position 11 near '97'.
+  parse error line 7 at position 16 near '97'.
+  parse error line 7 at position 28 near '99'.
+  parse error line 8 at position 19 near '99'.
+  parse error line 8 at position 43 near '102'.
+  parse error line 8 at position 53 near '102'.
+  compiled code at target/run/my_weather_project/models/staging/stg_weather.sql
+[0m06:26:05.772621 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79efd75c-0bce-45c1-976a-77dbe087f04e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7009f020>]}
+[0m06:26:05.772980 [error] [Thread-1 (]: 2 of 4 ERROR creating sql view model ANALYTICS_staging.stg_weather ............. [[31mERROR[0m in 0.13s]
+[0m06:26:05.773318 [debug] [Thread-1 (]: Finished running node model.my_weather_project.stg_weather
+[0m06:26:05.773754 [debug] [Thread-1 (]: Began running node model.my_weather_project.weather_analytics
+[0m06:26:05.773989 [debug] [Thread-4 (]: Marking all children of 'model.my_weather_project.stg_weather' to be skipped because of status 'error'.  Reason: Database Error in model stg_weather (models/staging/stg_weather.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 7 at position 4 unexpected '{'.
+  parse error line 7 at position 11 near '97'.
+  parse error line 7 at position 16 near '97'.
+  parse error line 7 at position 28 near '99'.
+  parse error line 8 at position 19 near '99'.
+  parse error line 8 at position 43 near '102'.
+  parse error line 8 at position 53 near '102'.
+  compiled code at target/run/my_weather_project/models/staging/stg_weather.sql.
+[0m06:26:05.774203 [info ] [Thread-1 (]: 3 of 4 START sql table model ANALYTICS.weather_analytics ....................... [RUN]
+[0m06:26:05.774930 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_weather_project.stg_weather, now model.my_weather_project.weather_analytics)
+[0m06:26:05.775106 [debug] [Thread-1 (]: Began compiling node model.my_weather_project.weather_analytics
+[0m06:26:05.776198 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_weather_project.weather_analytics"
+[0m06:26:05.778597 [debug] [Thread-1 (]: Began executing node model.my_weather_project.weather_analytics
+[0m06:26:05.779696 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_weather_project.weather_analytics"
+[0m06:26:05.781946 [debug] [Thread-1 (]: Using snowflake connection "model.my_weather_project.weather_analytics"
+[0m06:26:05.782117 [debug] [Thread-1 (]: On model.my_weather_project.weather_analytics: create or replace transient table USER_DB_POODLE.ANALYTICS.weather_analytics
+    
+    
+    
+    as ({\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "model.my_weather_project.weather_analytics"} */;
+[0m06:26:05.871100 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01c088a2-0307-171b-000f-c0df00856ffe
+[0m06:26:05.871460 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 5 at position 8 unexpected '{'.
+parse error line 5 at position 15 near '97'.
+parse error line 5 at position 20 near '97'.
+parse error line 5 at position 32 near '99'.
+parse error line 6 at position 19 near '99'.
+parse error line 6 at position 43 near '102'.
+parse error line 6 at position 53 near '102'.
+[0m06:26:05.873218 [debug] [Thread-1 (]: Database Error in model weather_analytics (models/marts/weather_analytics.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 8 unexpected '{'.
+  parse error line 5 at position 15 near '97'.
+  parse error line 5 at position 20 near '97'.
+  parse error line 5 at position 32 near '99'.
+  parse error line 6 at position 19 near '99'.
+  parse error line 6 at position 43 near '102'.
+  parse error line 6 at position 53 near '102'.
+  compiled code at target/run/my_weather_project/models/marts/weather_analytics.sql
+[0m06:26:05.873542 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79efd75c-0bce-45c1-976a-77dbe087f04e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff700d3770>]}
+[0m06:26:05.873939 [error] [Thread-1 (]: 3 of 4 ERROR creating sql table model ANALYTICS.weather_analytics .............. [[31mERROR[0m in 0.10s]
+[0m06:26:05.874328 [debug] [Thread-1 (]: Finished running node model.my_weather_project.weather_analytics
+[0m06:26:05.874626 [debug] [Thread-1 (]: Began running node model.my_weather_project.my_second_dbt_model
+[0m06:26:05.874870 [debug] [Thread-4 (]: Marking all children of 'model.my_weather_project.weather_analytics' to be skipped because of status 'error'.  Reason: Database Error in model weather_analytics (models/marts/weather_analytics.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 8 unexpected '{'.
+  parse error line 5 at position 15 near '97'.
+  parse error line 5 at position 20 near '97'.
+  parse error line 5 at position 32 near '99'.
+  parse error line 6 at position 19 near '99'.
+  parse error line 6 at position 43 near '102'.
+  parse error line 6 at position 53 near '102'.
+  compiled code at target/run/my_weather_project/models/marts/weather_analytics.sql.
+[0m06:26:05.875131 [info ] [Thread-1 (]: 4 of 4 START sql view model ANALYTICS.my_second_dbt_model ...................... [RUN]
+[0m06:26:05.875639 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_weather_project.weather_analytics, now model.my_weather_project.my_second_dbt_model)
+[0m06:26:05.875850 [debug] [Thread-1 (]: Began compiling node model.my_weather_project.my_second_dbt_model
+[0m06:26:05.877556 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_weather_project.my_second_dbt_model"
+[0m06:26:05.880040 [debug] [Thread-1 (]: Began executing node model.my_weather_project.my_second_dbt_model
+[0m06:26:05.881849 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_weather_project.my_second_dbt_model"
+[0m06:26:05.883205 [debug] [Thread-1 (]: Using snowflake connection "model.my_weather_project.my_second_dbt_model"
+[0m06:26:05.883413 [debug] [Thread-1 (]: On model.my_weather_project.my_second_dbt_model: create or replace   view USER_DB_POODLE.ANALYTICS.my_second_dbt_model
+  
+  
+  
+  
+  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from USER_DB_POODLE.ANALYTICS.my_first_dbt_model
+where id = 1
+  )
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "model.my_weather_project.my_second_dbt_model"} */;
+[0m06:26:06.265410 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.381 seconds
+[0m06:26:06.268993 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79efd75c-0bce-45c1-976a-77dbe087f04e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7013f6b0>]}
+[0m06:26:06.269835 [info ] [Thread-1 (]: 4 of 4 OK created sql view model ANALYTICS.my_second_dbt_model ................. [[32mSUCCESS 1[0m in 0.39s]
+[0m06:26:06.270463 [debug] [Thread-1 (]: Finished running node model.my_weather_project.my_second_dbt_model
+[0m06:26:06.272008 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m06:26:06.272317 [debug] [MainThread]: Connection 'model.my_weather_project.my_second_dbt_model' was left open.
+[0m06:26:06.272625 [debug] [MainThread]: On model.my_weather_project.my_second_dbt_model: Close
+[0m06:26:06.433231 [info ] [MainThread]: 
+[0m06:26:06.434741 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 3.74 seconds (3.74s).
+[0m06:26:06.436507 [debug] [MainThread]: Command end result
+[0m06:26:06.471165 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m06:26:06.474099 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m06:26:06.480326 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt/target/run_results.json
+[0m06:26:06.480539 [info ] [MainThread]: 
+[0m06:26:06.480801 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m06:26:06.481015 [info ] [MainThread]: 
+[0m06:26:06.481388 [error] [MainThread]: [31mFailure in model stg_weather (models/staging/stg_weather.sql)[0m
+[0m06:26:06.481796 [error] [MainThread]:   Database Error in model stg_weather (models/staging/stg_weather.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 7 at position 4 unexpected '{'.
+  parse error line 7 at position 11 near '97'.
+  parse error line 7 at position 16 near '97'.
+  parse error line 7 at position 28 near '99'.
+  parse error line 8 at position 19 near '99'.
+  parse error line 8 at position 43 near '102'.
+  parse error line 8 at position 53 near '102'.
+  compiled code at target/run/my_weather_project/models/staging/stg_weather.sql
+[0m06:26:06.482079 [info ] [MainThread]: 
+[0m06:26:06.482387 [info ] [MainThread]:   compiled code at target/compiled/my_weather_project/models/staging/stg_weather.sql
+[0m06:26:06.482807 [info ] [MainThread]: 
+[0m06:26:06.483238 [error] [MainThread]: [31mFailure in model weather_analytics (models/marts/weather_analytics.sql)[0m
+[0m06:26:06.483570 [error] [MainThread]:   Database Error in model weather_analytics (models/marts/weather_analytics.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 8 unexpected '{'.
+  parse error line 5 at position 15 near '97'.
+  parse error line 5 at position 20 near '97'.
+  parse error line 5 at position 32 near '99'.
+  parse error line 6 at position 19 near '99'.
+  parse error line 6 at position 43 near '102'.
+  parse error line 6 at position 53 near '102'.
+  compiled code at target/run/my_weather_project/models/marts/weather_analytics.sql
+[0m06:26:06.484150 [info ] [MainThread]: 
+[0m06:26:06.484593 [info ] [MainThread]:   compiled code at target/compiled/my_weather_project/models/marts/weather_analytics.sql
+[0m06:26:06.485079 [info ] [MainThread]: 
+[0m06:26:06.485362 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=2 SKIP=0 NO-OP=0 TOTAL=4
+[0m06:26:06.486353 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 5.0002036, "process_in_blocks": "4912", "process_kernel_time": 0.41888, "process_mem_max_rss": "233744", "process_out_blocks": "6600", "process_user_time": 3.086118}
+[0m06:26:06.486667 [debug] [MainThread]: Command `dbt run` failed at 06:26:06.486606 after 5.00 seconds
+[0m06:26:06.486907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff932e11c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff72b82060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff93328800>]}
+[0m06:26:06.487098 [debug] [MainThread]: Flushing usage events
+[0m06:26:06.929958 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:29:35.638691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e1c2b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e646120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8ecef410>]}
+
+
+============================== 06:29:35.642765 | bb7a0647-b143-4df9-8ae5-e7370fc29bcd ==============================
+[0m06:29:35.642765 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m06:29:35.643155 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'partial_parse': 'True', 'printer_width': '80', 'target_path': 'None', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt', 'debug': 'False', 'profiles_dir': '/opt/airflow/dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'static_parser': 'True', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'log_path': '/opt/airflow/dbt/logs', 'indirect_selection': 'eager', 'version_check': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'quiet': 'False', 'introspect': 'True', 'no_print': 'None', 'log_cache_events': 'False', 'write_json': 'True', 'empty': 'False'}
+[0m06:29:35.914356 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m06:29:35.914661 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m06:29:35.914834 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m06:29:36.003386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bb7a0647-b143-4df9-8ae5-e7370fc29bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6d698e60>]}
+[0m06:29:36.034588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bb7a0647-b143-4df9-8ae5-e7370fc29bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff70467aa0>]}
+[0m06:29:36.034956 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m06:29:36.078594 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m06:29:36.135639 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m06:29:36.135962 [debug] [MainThread]: Partial parsing: updated file: my_weather_project://models/staging/stg_weather.sql
+[0m06:29:36.136172 [debug] [MainThread]: Partial parsing: updated file: my_weather_project://models/marts/weather_analytics.sql
+[0m06:29:36.262303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bb7a0647-b143-4df9-8ae5-e7370fc29bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6d035070>]}
+[0m06:29:36.333325 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m06:29:36.340036 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m06:29:36.350991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bb7a0647-b143-4df9-8ae5-e7370fc29bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6d104140>]}
+[0m06:29:36.351241 [info ] [MainThread]: Found 4 models, 4 data tests, 1 source, 504 macros
+[0m06:29:36.351380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bb7a0647-b143-4df9-8ae5-e7370fc29bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6cfbd880>]}
+[0m06:29:36.352313 [info ] [MainThread]: 
+[0m06:29:36.352461 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m06:29:36.352582 [info ] [MainThread]: 
+[0m06:29:36.352852 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m06:29:36.354783 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_POODLE'
+[0m06:29:36.370039 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE"
+[0m06:29:36.370295 [debug] [ThreadPool]: On list_USER_DB_POODLE: show terse schemas in database USER_DB_POODLE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE"} */
+[0m06:29:36.370439 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:29:36.852590 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.482 seconds
+[0m06:29:36.856394 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE"
+[0m06:29:36.856802 [debug] [ThreadPool]: On list_USER_DB_POODLE: show terse schemas in database USER_DB_POODLE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE"} */
+[0m06:29:36.996898 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.140 seconds
+[0m06:29:36.999114 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_POODLE_ANALYTICS'
+[0m06:29:37.008849 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS"
+[0m06:29:37.009105 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS: show objects in USER_DB_POODLE.ANALYTICS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS"} */;
+[0m06:29:37.009308 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:29:37.718606 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.709 seconds
+[0m06:29:37.722657 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS, now list_USER_DB_POODLE_ANALYTICS_staging)
+[0m06:29:37.727720 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS_staging"
+[0m06:29:37.728105 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS_staging: show objects in USER_DB_POODLE.ANALYTICS_staging
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS_staging"} */;
+[0m06:29:37.834728 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.106 seconds
+[0m06:29:37.838286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bb7a0647-b143-4df9-8ae5-e7370fc29bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff56e432f0>]}
+[0m06:29:37.844876 [debug] [Thread-1 (]: Began running node model.my_weather_project.my_first_dbt_model
+[0m06:29:37.845831 [info ] [Thread-1 (]: 1 of 4 START sql table model ANALYTICS.my_first_dbt_model ...................... [RUN]
+[0m06:29:37.846534 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS_staging, now model.my_weather_project.my_first_dbt_model)
+[0m06:29:37.847124 [debug] [Thread-1 (]: Began compiling node model.my_weather_project.my_first_dbt_model
+[0m06:29:37.855349 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_weather_project.my_first_dbt_model"
+[0m06:29:37.857733 [debug] [Thread-1 (]: Began executing node model.my_weather_project.my_first_dbt_model
+[0m06:29:37.885009 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_weather_project.my_first_dbt_model"
+[0m06:29:37.886738 [debug] [Thread-1 (]: Using snowflake connection "model.my_weather_project.my_first_dbt_model"
+[0m06:29:37.887018 [debug] [Thread-1 (]: On model.my_weather_project.my_first_dbt_model: create or replace transient table USER_DB_POODLE.ANALYTICS.my_first_dbt_model
+    
+    
+    
+    as (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "model.my_weather_project.my_first_dbt_model"} */;
+[0m06:29:38.742585 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.855 seconds
+[0m06:29:38.770270 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bb7a0647-b143-4df9-8ae5-e7370fc29bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8ecb8770>]}
+[0m06:29:38.771087 [info ] [Thread-1 (]: 1 of 4 OK created sql table model ANALYTICS.my_first_dbt_model ................. [[32mSUCCESS 1[0m in 0.92s]
+[0m06:29:38.771663 [debug] [Thread-1 (]: Finished running node model.my_weather_project.my_first_dbt_model
+[0m06:29:38.772107 [debug] [Thread-1 (]: Began running node model.my_weather_project.stg_weather
+[0m06:29:38.772586 [info ] [Thread-1 (]: 2 of 4 START sql view model ANALYTICS_staging.stg_weather ...................... [RUN]
+[0m06:29:38.773089 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_weather_project.my_first_dbt_model, now model.my_weather_project.stg_weather)
+[0m06:29:38.773443 [debug] [Thread-1 (]: Began compiling node model.my_weather_project.stg_weather
+[0m06:29:38.775607 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_weather_project.stg_weather"
+[0m06:29:38.778186 [debug] [Thread-1 (]: Began executing node model.my_weather_project.stg_weather
+[0m06:29:38.790852 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_weather_project.stg_weather"
+[0m06:29:38.792297 [debug] [Thread-1 (]: Using snowflake connection "model.my_weather_project.stg_weather"
+[0m06:29:38.792543 [debug] [Thread-1 (]: On model.my_weather_project.stg_weather: create or replace   view USER_DB_POODLE.ANALYTICS_staging.stg_weather
+  
+  
+  
+  
+  as (
+    SELECT
+    forecast_date,
+    max_temp,
+    min_temp,
+    precipitation,
+    wind_speed
+FROM USER_DB_POODLE.RAW.weather_history
+  )
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "model.my_weather_project.stg_weather"} */;
+[0m06:29:39.102000 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.309 seconds
+[0m06:29:39.105892 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bb7a0647-b143-4df9-8ae5-e7370fc29bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff56d58260>]}
+[0m06:29:39.106653 [info ] [Thread-1 (]: 2 of 4 OK created sql view model ANALYTICS_staging.stg_weather ................. [[32mSUCCESS 1[0m in 0.33s]
+[0m06:29:39.107302 [debug] [Thread-1 (]: Finished running node model.my_weather_project.stg_weather
+[0m06:29:39.107819 [debug] [Thread-1 (]: Began running node model.my_weather_project.my_second_dbt_model
+[0m06:29:39.108337 [info ] [Thread-1 (]: 3 of 4 START sql view model ANALYTICS.my_second_dbt_model ...................... [RUN]
+[0m06:29:39.109026 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_weather_project.stg_weather, now model.my_weather_project.my_second_dbt_model)
+[0m06:29:39.109547 [debug] [Thread-1 (]: Began compiling node model.my_weather_project.my_second_dbt_model
+[0m06:29:39.112550 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_weather_project.my_second_dbt_model"
+[0m06:29:39.114280 [debug] [Thread-1 (]: Began executing node model.my_weather_project.my_second_dbt_model
+[0m06:29:39.116609 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_weather_project.my_second_dbt_model"
+[0m06:29:39.118344 [debug] [Thread-1 (]: Using snowflake connection "model.my_weather_project.my_second_dbt_model"
+[0m06:29:39.118665 [debug] [Thread-1 (]: On model.my_weather_project.my_second_dbt_model: create or replace   view USER_DB_POODLE.ANALYTICS.my_second_dbt_model
+  
+  
+  
+  
+  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from USER_DB_POODLE.ANALYTICS.my_first_dbt_model
+where id = 1
+  )
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "model.my_weather_project.my_second_dbt_model"} */;
+[0m06:29:39.435993 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.317 seconds
+[0m06:29:39.439010 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bb7a0647-b143-4df9-8ae5-e7370fc29bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff56d14560>]}
+[0m06:29:39.439744 [info ] [Thread-1 (]: 3 of 4 OK created sql view model ANALYTICS.my_second_dbt_model ................. [[32mSUCCESS 1[0m in 0.33s]
+[0m06:29:39.440659 [debug] [Thread-1 (]: Finished running node model.my_weather_project.my_second_dbt_model
+[0m06:29:39.441120 [debug] [Thread-1 (]: Began running node model.my_weather_project.weather_analytics
+[0m06:29:39.441655 [info ] [Thread-1 (]: 4 of 4 START sql table model ANALYTICS.weather_analytics ....................... [RUN]
+[0m06:29:39.442147 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_weather_project.my_second_dbt_model, now model.my_weather_project.weather_analytics)
+[0m06:29:39.442503 [debug] [Thread-1 (]: Began compiling node model.my_weather_project.weather_analytics
+[0m06:29:39.445885 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_weather_project.weather_analytics"
+[0m06:29:39.447952 [debug] [Thread-1 (]: Began executing node model.my_weather_project.weather_analytics
+[0m06:29:39.450387 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_weather_project.weather_analytics"
+[0m06:29:39.452709 [debug] [Thread-1 (]: Using snowflake connection "model.my_weather_project.weather_analytics"
+[0m06:29:39.453026 [debug] [Thread-1 (]: On model.my_weather_project.weather_analytics: create or replace transient table USER_DB_POODLE.ANALYTICS.weather_analytics
+    
+    
+    
+    as (
+
+WITH source_data AS (
+    SELECT * FROM USER_DB_POODLE.ANALYTICS_staging.stg_weather
+)
+
+SELECT
+    forecast_date,
+    max_temp,
+    min_temp,
+    precipitation,
+    wind_speed,
+    
+    -- Transformation 1: Calculate Temperature Range
+    (max_temp - min_temp) as temp_variation,
+    
+    -- Transformation 2: 7-Day Moving Average of Max Temp (Window Function)
+    AVG(max_temp) OVER (
+        ORDER BY forecast_date 
+        ROWS BETWEEN 6 PRECEDING AND CURRENT ROW
+    ) as seven_day_avg_max_temp,
+    
+    -- Transformation 3: Categorize Days
+    CASE 
+        WHEN precipitation > 0 THEN 'Rainy'
+        ELSE 'Dry'
+    END as rain_status,
+
+    CASE
+        WHEN wind_speed > 20 THEN 'High Wind'
+        ELSE 'Normal Wind'
+    END as wind_status
+
+FROM source_data
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "model.my_weather_project.weather_analytics"} */;
+[0m06:29:40.587798 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.134 seconds
+[0m06:29:40.589404 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bb7a0647-b143-4df9-8ae5-e7370fc29bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff553abc20>]}
+[0m06:29:40.589729 [info ] [Thread-1 (]: 4 of 4 OK created sql table model ANALYTICS.weather_analytics .................. [[32mSUCCESS 1[0m in 1.15s]
+[0m06:29:40.590019 [debug] [Thread-1 (]: Finished running node model.my_weather_project.weather_analytics
+[0m06:29:40.591737 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m06:29:40.591945 [debug] [MainThread]: Connection 'list_USER_DB_POODLE' was left open.
+[0m06:29:40.592124 [debug] [MainThread]: On list_USER_DB_POODLE: Close
+[0m06:29:40.716424 [debug] [MainThread]: Connection 'model.my_weather_project.weather_analytics' was left open.
+[0m06:29:40.716713 [debug] [MainThread]: On model.my_weather_project.weather_analytics: Close
+[0m06:29:40.881034 [info ] [MainThread]: 
+[0m06:29:40.881481 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 4.53 seconds (4.53s).
+[0m06:29:40.882202 [debug] [MainThread]: Command end result
+[0m06:29:40.909856 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m06:29:40.914168 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m06:29:40.917648 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt/target/run_results.json
+[0m06:29:40.917809 [info ] [MainThread]: 
+[0m06:29:40.917986 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m06:29:40.918310 [info ] [MainThread]: 
+[0m06:29:40.918526 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m06:29:40.919249 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.320115, "process_in_blocks": "128", "process_kernel_time": 0.229426, "process_mem_max_rss": "226880", "process_out_blocks": "3205", "process_user_time": 2.506589}
+[0m06:29:40.919467 [debug] [MainThread]: Command `dbt run` succeeded at 06:29:40.919428 after 5.32 seconds
+[0m06:29:40.919678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e5c45c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6cfd9ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff553ac590>]}
+[0m06:29:40.919900 [debug] [MainThread]: Flushing usage events
+[0m06:29:41.340959 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:29:43.618302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffad2c27e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaccba480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaccb9ac0>]}
+
+
+============================== 06:29:43.621728 | d408b151-7878-45fc-9789-7cda8b51f425 ==============================
+[0m06:29:43.621728 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m06:29:43.622023 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'partial_parse': 'True', 'printer_width': '80', 'profiles_dir': '/opt/airflow/dbt', 'log_format': 'default', 'version_check': 'True', 'use_colors': 'True', 'introspect': 'True', 'write_json': 'True', 'indirect_selection': 'eager', 'empty': 'None', 'quiet': 'False', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt test --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt', 'fail_fast': 'False', 'target_path': 'None', 'use_experimental_parser': 'False', 'debug': 'False', 'log_cache_events': 'False', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': '/opt/airflow/dbt/logs', 'warn_error': 'None'}
+[0m06:29:43.897292 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m06:29:43.897617 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m06:29:43.897791 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m06:29:43.982565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd408b151-7878-45fc-9789-7cda8b51f425', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8bbba960>]}
+[0m06:29:44.012166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd408b151-7878-45fc-9789-7cda8b51f425', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaeef9430>]}
+[0m06:29:44.012543 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m06:29:44.052604 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m06:29:44.108362 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m06:29:44.108584 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m06:29:44.126156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd408b151-7878-45fc-9789-7cda8b51f425', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8bacfce0>]}
+[0m06:29:44.161044 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m06:29:44.163957 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m06:29:44.188558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd408b151-7878-45fc-9789-7cda8b51f425', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b6b64b0>]}
+[0m06:29:44.188798 [info ] [MainThread]: Found 4 models, 4 data tests, 1 source, 504 macros
+[0m06:29:44.188949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd408b151-7878-45fc-9789-7cda8b51f425', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffad2c07d0>]}
+[0m06:29:44.189832 [info ] [MainThread]: 
+[0m06:29:44.189986 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m06:29:44.190170 [info ] [MainThread]: 
+[0m06:29:44.190439 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m06:29:44.192304 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_POODLE_ANALYTICS'
+[0m06:29:44.210071 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS"
+[0m06:29:44.210302 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS: show objects in USER_DB_POODLE.ANALYTICS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS"} */;
+[0m06:29:44.210459 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:29:44.891765 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.681 seconds
+[0m06:29:44.896030 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS, now list_USER_DB_POODLE_ANALYTICS_staging)
+[0m06:29:44.901332 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS_staging"
+[0m06:29:44.901861 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS_staging: show objects in USER_DB_POODLE.ANALYTICS_staging
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS_staging"} */;
+[0m06:29:45.045604 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.143 seconds
+[0m06:29:45.050053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd408b151-7878-45fc-9789-7cda8b51f425', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffac63fd40>]}
+[0m06:29:45.055759 [debug] [Thread-1 (]: Began running node test.my_weather_project.not_null_my_first_dbt_model_id.5fb22c2710
+[0m06:29:45.056727 [info ] [Thread-1 (]: 1 of 4 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m06:29:45.057330 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS_staging, now test.my_weather_project.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m06:29:45.057818 [debug] [Thread-1 (]: Began compiling node test.my_weather_project.not_null_my_first_dbt_model_id.5fb22c2710
+[0m06:29:45.071441 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_weather_project.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m06:29:45.075874 [debug] [Thread-1 (]: Began executing node test.my_weather_project.not_null_my_first_dbt_model_id.5fb22c2710
+[0m06:29:45.090014 [debug] [Thread-1 (]: Writing runtime sql for node "test.my_weather_project.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m06:29:45.092440 [debug] [Thread-1 (]: Using snowflake connection "test.my_weather_project.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m06:29:45.092677 [debug] [Thread-1 (]: On test.my_weather_project.not_null_my_first_dbt_model_id.5fb22c2710: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from USER_DB_POODLE.ANALYTICS.my_first_dbt_model
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "test.my_weather_project.not_null_my_first_dbt_model_id.5fb22c2710"} */
+[0m06:29:45.374267 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.281 seconds
+[0m06:29:45.387697 [error] [Thread-1 (]: 1 of 4 FAIL 1 not_null_my_first_dbt_model_id ................................... [[31mFAIL 1[0m in 0.33s]
+[0m06:29:45.388891 [debug] [Thread-1 (]: Finished running node test.my_weather_project.not_null_my_first_dbt_model_id.5fb22c2710
+[0m06:29:45.389591 [debug] [Thread-1 (]: Began running node test.my_weather_project.not_null_my_second_dbt_model_id.151b76d778
+[0m06:29:45.390121 [info ] [Thread-1 (]: 2 of 4 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m06:29:45.390714 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_weather_project.not_null_my_first_dbt_model_id.5fb22c2710, now test.my_weather_project.not_null_my_second_dbt_model_id.151b76d778)
+[0m06:29:45.391290 [debug] [Thread-1 (]: Began compiling node test.my_weather_project.not_null_my_second_dbt_model_id.151b76d778
+[0m06:29:45.397277 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_weather_project.not_null_my_second_dbt_model_id.151b76d778"
+[0m06:29:45.400267 [debug] [Thread-1 (]: Began executing node test.my_weather_project.not_null_my_second_dbt_model_id.151b76d778
+[0m06:29:45.402586 [debug] [Thread-1 (]: Writing runtime sql for node "test.my_weather_project.not_null_my_second_dbt_model_id.151b76d778"
+[0m06:29:45.405043 [debug] [Thread-1 (]: Using snowflake connection "test.my_weather_project.not_null_my_second_dbt_model_id.151b76d778"
+[0m06:29:45.405319 [debug] [Thread-1 (]: On test.my_weather_project.not_null_my_second_dbt_model_id.151b76d778: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from USER_DB_POODLE.ANALYTICS.my_second_dbt_model
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "test.my_weather_project.not_null_my_second_dbt_model_id.151b76d778"} */
+[0m06:29:45.656384 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.251 seconds
+[0m06:29:45.658468 [info ] [Thread-1 (]: 2 of 4 PASS not_null_my_second_dbt_model_id .................................... [[32mPASS[0m in 0.27s]
+[0m06:29:45.659151 [debug] [Thread-1 (]: Finished running node test.my_weather_project.not_null_my_second_dbt_model_id.151b76d778
+[0m06:29:45.659579 [debug] [Thread-1 (]: Began running node test.my_weather_project.unique_my_first_dbt_model_id.16e066b321
+[0m06:29:45.659926 [info ] [Thread-1 (]: 3 of 4 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m06:29:45.660446 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_weather_project.not_null_my_second_dbt_model_id.151b76d778, now test.my_weather_project.unique_my_first_dbt_model_id.16e066b321)
+[0m06:29:45.660870 [debug] [Thread-1 (]: Began compiling node test.my_weather_project.unique_my_first_dbt_model_id.16e066b321
+[0m06:29:45.665214 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_weather_project.unique_my_first_dbt_model_id.16e066b321"
+[0m06:29:45.667603 [debug] [Thread-1 (]: Began executing node test.my_weather_project.unique_my_first_dbt_model_id.16e066b321
+[0m06:29:45.669106 [debug] [Thread-1 (]: Writing runtime sql for node "test.my_weather_project.unique_my_first_dbt_model_id.16e066b321"
+[0m06:29:45.671295 [debug] [Thread-1 (]: Using snowflake connection "test.my_weather_project.unique_my_first_dbt_model_id.16e066b321"
+[0m06:29:45.671550 [debug] [Thread-1 (]: On test.my_weather_project.unique_my_first_dbt_model_id.16e066b321: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from USER_DB_POODLE.ANALYTICS.my_first_dbt_model
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "test.my_weather_project.unique_my_first_dbt_model_id.16e066b321"} */
+[0m06:29:46.013076 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.341 seconds
+[0m06:29:46.015686 [info ] [Thread-1 (]: 3 of 4 PASS unique_my_first_dbt_model_id ....................................... [[32mPASS[0m in 0.36s]
+[0m06:29:46.016778 [debug] [Thread-1 (]: Finished running node test.my_weather_project.unique_my_first_dbt_model_id.16e066b321
+[0m06:29:46.017237 [debug] [Thread-1 (]: Began running node test.my_weather_project.unique_my_second_dbt_model_id.57a0f8c493
+[0m06:29:46.017637 [info ] [Thread-1 (]: 4 of 4 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m06:29:46.018139 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_weather_project.unique_my_first_dbt_model_id.16e066b321, now test.my_weather_project.unique_my_second_dbt_model_id.57a0f8c493)
+[0m06:29:46.018607 [debug] [Thread-1 (]: Began compiling node test.my_weather_project.unique_my_second_dbt_model_id.57a0f8c493
+[0m06:29:46.022329 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_weather_project.unique_my_second_dbt_model_id.57a0f8c493"
+[0m06:29:46.024965 [debug] [Thread-1 (]: Began executing node test.my_weather_project.unique_my_second_dbt_model_id.57a0f8c493
+[0m06:29:46.026764 [debug] [Thread-1 (]: Writing runtime sql for node "test.my_weather_project.unique_my_second_dbt_model_id.57a0f8c493"
+[0m06:29:46.029452 [debug] [Thread-1 (]: Using snowflake connection "test.my_weather_project.unique_my_second_dbt_model_id.57a0f8c493"
+[0m06:29:46.029736 [debug] [Thread-1 (]: On test.my_weather_project.unique_my_second_dbt_model_id.57a0f8c493: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from USER_DB_POODLE.ANALYTICS.my_second_dbt_model
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "test.my_weather_project.unique_my_second_dbt_model_id.57a0f8c493"} */
+[0m06:29:46.628551 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.598 seconds
+[0m06:29:46.632887 [info ] [Thread-1 (]: 4 of 4 PASS unique_my_second_dbt_model_id ...................................... [[32mPASS[0m in 0.61s]
+[0m06:29:46.634586 [debug] [Thread-1 (]: Finished running node test.my_weather_project.unique_my_second_dbt_model_id.57a0f8c493
+[0m06:29:46.636117 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m06:29:46.636551 [debug] [MainThread]: Connection 'test.my_weather_project.unique_my_second_dbt_model_id.57a0f8c493' was left open.
+[0m06:29:46.637393 [debug] [MainThread]: On test.my_weather_project.unique_my_second_dbt_model_id.57a0f8c493: Close
+[0m06:29:46.767718 [info ] [MainThread]: 
+[0m06:29:46.768549 [info ] [MainThread]: Finished running 4 data tests in 0 hours 0 minutes and 2.58 seconds (2.58s).
+[0m06:29:46.769836 [debug] [MainThread]: Command end result
+[0m06:29:46.800697 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m06:29:46.805960 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m06:29:46.814718 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt/target/run_results.json
+[0m06:29:46.814934 [info ] [MainThread]: 
+[0m06:29:46.815110 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m06:29:46.815292 [info ] [MainThread]: 
+[0m06:29:46.815593 [error] [MainThread]: [31mFailure in test not_null_my_first_dbt_model_id (models/example/schema.yml)[0m
+[0m06:29:46.815848 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m06:29:46.816018 [info ] [MainThread]: 
+[0m06:29:46.816223 [info ] [MainThread]:   compiled code at target/compiled/my_weather_project/models/example/schema.yml/not_null_my_first_dbt_model_id.sql
+[0m06:29:46.816425 [info ] [MainThread]: 
+[0m06:29:46.816715 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=4
+[0m06:29:46.817440 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 3.2261431, "process_in_blocks": "664", "process_kernel_time": 0.151732, "process_mem_max_rss": "223740", "process_out_blocks": "2150", "process_user_time": 2.370686}
+[0m06:29:46.817774 [debug] [MainThread]: Command `dbt test` failed at 06:29:46.817727 after 3.23 seconds
+[0m06:29:46.817989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffacf611f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffad2c28d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8abfdaf0>]}
+[0m06:29:46.818172 [debug] [MainThread]: Flushing usage events
+[0m06:29:47.185061 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:32:29.544467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb5085580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb23fb410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb3ef68a0>]}
+
+
+============================== 06:32:29.548689 | a6cfe375-9158-4237-922a-b18839bcad60 ==============================
+[0m06:32:29.548689 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m06:32:29.550460 [debug] [MainThread]: running dbt with arguments {'empty': 'False', 'static_parser': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'partial_parse': 'True', 'version_check': 'True', 'printer_width': '80', 'indirect_selection': 'eager', 'warn_error': 'None', 'introspect': 'True', 'cache_selected_only': 'False', 'use_colors': 'True', 'write_json': 'True', 'profiles_dir': '/opt/airflow/dbt', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt', 'log_path': '/opt/airflow/dbt/logs'}
+[0m06:32:29.855598 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m06:32:29.855963 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m06:32:29.856179 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m06:32:29.953532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a6cfe375-9158-4237-922a-b18839bcad60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb2a6a2a0>]}
+[0m06:32:29.983514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a6cfe375-9158-4237-922a-b18839bcad60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff91ad00e0>]}
+[0m06:32:29.983955 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m06:32:30.026002 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m06:32:30.079911 [debug] [MainThread]: Partial parsing enabled: 3 files deleted, 0 files added, 0 files changed.
+[0m06:32:30.080239 [debug] [MainThread]: Partial parsing: deleted file: my_weather_project://models/example/my_first_dbt_model.sql
+[0m06:32:30.080420 [debug] [MainThread]: Partial parsing: deleted file: my_weather_project://models/example/my_second_dbt_model.sql
+[0m06:32:30.111185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a6cfe375-9158-4237-922a-b18839bcad60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff915e2690>]}
+[0m06:32:30.141608 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m06:32:30.143339 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m06:32:30.154339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a6cfe375-9158-4237-922a-b18839bcad60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff91371370>]}
+[0m06:32:30.154548 [info ] [MainThread]: Found 2 models, 1 source, 504 macros
+[0m06:32:30.154713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a6cfe375-9158-4237-922a-b18839bcad60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff913364b0>]}
+[0m06:32:30.155421 [info ] [MainThread]: 
+[0m06:32:30.155700 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m06:32:30.155892 [info ] [MainThread]: 
+[0m06:32:30.156172 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m06:32:30.157912 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_POODLE'
+[0m06:32:30.176014 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE"
+[0m06:32:30.176240 [debug] [ThreadPool]: On list_USER_DB_POODLE: show terse schemas in database USER_DB_POODLE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE"} */
+[0m06:32:30.176396 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:32:30.764874 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.588 seconds
+[0m06:32:30.768745 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE"
+[0m06:32:30.769108 [debug] [ThreadPool]: On list_USER_DB_POODLE: show terse schemas in database USER_DB_POODLE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE"} */
+[0m06:32:30.933875 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.164 seconds
+[0m06:32:30.935370 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE, now list_USER_DB_POODLE_ANALYTICS_staging)
+[0m06:32:30.940794 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS_staging"
+[0m06:32:30.940999 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS_staging: show objects in USER_DB_POODLE.ANALYTICS_staging
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS_staging"} */;
+[0m06:32:31.072454 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.131 seconds
+[0m06:32:31.075176 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS_staging, now list_USER_DB_POODLE_ANALYTICS)
+[0m06:32:31.077835 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS"
+[0m06:32:31.078130 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS: show objects in USER_DB_POODLE.ANALYTICS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS"} */;
+[0m06:32:31.397369 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.319 seconds
+[0m06:32:31.403790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a6cfe375-9158-4237-922a-b18839bcad60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff911e2f00>]}
+[0m06:32:31.412742 [debug] [Thread-1 (]: Began running node model.my_weather_project.stg_weather
+[0m06:32:31.413774 [info ] [Thread-1 (]: 1 of 2 START sql view model ANALYTICS_staging.stg_weather ...................... [RUN]
+[0m06:32:31.414564 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS, now model.my_weather_project.stg_weather)
+[0m06:32:31.415557 [debug] [Thread-1 (]: Began compiling node model.my_weather_project.stg_weather
+[0m06:32:31.422695 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_weather_project.stg_weather"
+[0m06:32:31.430562 [debug] [Thread-1 (]: Began executing node model.my_weather_project.stg_weather
+[0m06:32:31.449041 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_weather_project.stg_weather"
+[0m06:32:31.479753 [debug] [Thread-1 (]: Using snowflake connection "model.my_weather_project.stg_weather"
+[0m06:32:31.480025 [debug] [Thread-1 (]: On model.my_weather_project.stg_weather: create or replace   view USER_DB_POODLE.ANALYTICS_staging.stg_weather
+  
+  
+  
+  
+  as (
+    SELECT
+    forecast_date,
+    max_temp,
+    min_temp,
+    precipitation,
+    wind_speed
+FROM USER_DB_POODLE.RAW.weather_history
+  )
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "model.my_weather_project.stg_weather"} */;
+[0m06:32:31.835058 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.354 seconds
+[0m06:32:31.851575 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a6cfe375-9158-4237-922a-b18839bcad60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb4bc41a0>]}
+[0m06:32:31.852036 [info ] [Thread-1 (]: 1 of 2 OK created sql view model ANALYTICS_staging.stg_weather ................. [[32mSUCCESS 1[0m in 0.44s]
+[0m06:32:31.852408 [debug] [Thread-1 (]: Finished running node model.my_weather_project.stg_weather
+[0m06:32:31.852903 [debug] [Thread-1 (]: Began running node model.my_weather_project.weather_analytics
+[0m06:32:31.853188 [info ] [Thread-1 (]: 2 of 2 START sql table model ANALYTICS.weather_analytics ....................... [RUN]
+[0m06:32:31.853503 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_weather_project.stg_weather, now model.my_weather_project.weather_analytics)
+[0m06:32:31.853695 [debug] [Thread-1 (]: Began compiling node model.my_weather_project.weather_analytics
+[0m06:32:31.856393 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_weather_project.weather_analytics"
+[0m06:32:31.870418 [debug] [Thread-1 (]: Began executing node model.my_weather_project.weather_analytics
+[0m06:32:31.882812 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_weather_project.weather_analytics"
+[0m06:32:31.893723 [debug] [Thread-1 (]: Using snowflake connection "model.my_weather_project.weather_analytics"
+[0m06:32:31.894026 [debug] [Thread-1 (]: On model.my_weather_project.weather_analytics: create or replace transient table USER_DB_POODLE.ANALYTICS.weather_analytics
+    
+    
+    
+    as (
+
+WITH source_data AS (
+    SELECT * FROM USER_DB_POODLE.ANALYTICS_staging.stg_weather
+)
+
+SELECT
+    forecast_date,
+    max_temp,
+    min_temp,
+    precipitation,
+    wind_speed,
+    
+    -- Transformation 1: Calculate Temperature Range
+    (max_temp - min_temp) as temp_variation,
+    
+    -- Transformation 2: 7-Day Moving Average of Max Temp (Window Function)
+    AVG(max_temp) OVER (
+        ORDER BY forecast_date 
+        ROWS BETWEEN 6 PRECEDING AND CURRENT ROW
+    ) as seven_day_avg_max_temp,
+    
+    -- Transformation 3: Categorize Days
+    CASE 
+        WHEN precipitation > 0 THEN 'Rainy'
+        ELSE 'Dry'
+    END as rain_status,
+
+    CASE
+        WHEN wind_speed > 20 THEN 'High Wind'
+        ELSE 'Normal Wind'
+    END as wind_status
+
+FROM source_data
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "model.my_weather_project.weather_analytics"} */;
+[0m06:32:33.030765 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.136 seconds
+[0m06:32:33.034870 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a6cfe375-9158-4237-922a-b18839bcad60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90564980>]}
+[0m06:32:33.035703 [info ] [Thread-1 (]: 2 of 2 OK created sql table model ANALYTICS.weather_analytics .................. [[32mSUCCESS 1[0m in 1.18s]
+[0m06:32:33.036336 [debug] [Thread-1 (]: Finished running node model.my_weather_project.weather_analytics
+[0m06:32:33.037934 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m06:32:33.038238 [debug] [MainThread]: Connection 'model.my_weather_project.weather_analytics' was left open.
+[0m06:32:33.038563 [debug] [MainThread]: On model.my_weather_project.weather_analytics: Close
+[0m06:32:33.174234 [info ] [MainThread]: 
+[0m06:32:33.176540 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 3.02 seconds (3.02s).
+[0m06:32:33.178949 [debug] [MainThread]: Command end result
+[0m06:32:33.251253 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m06:32:33.257009 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m06:32:33.262808 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt/target/run_results.json
+[0m06:32:33.263144 [info ] [MainThread]: 
+[0m06:32:33.263746 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m06:32:33.264177 [info ] [MainThread]: 
+[0m06:32:33.264563 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m06:32:33.266070 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.7559412, "process_in_blocks": "136", "process_kernel_time": 0.275162, "process_mem_max_rss": "222484", "process_out_blocks": "3097", "process_user_time": 2.42943}
+[0m06:32:33.266529 [debug] [MainThread]: Command `dbt run` succeeded at 06:32:33.266443 after 3.76 seconds
+[0m06:32:33.266892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb3d97aa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff918bfe30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff918be9f0>]}
+[0m06:32:33.267277 [debug] [MainThread]: Flushing usage events
+[0m06:32:33.852043 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:32:35.833177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff96bc5340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff99e3d010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9666a750>]}
+
+
+============================== 06:32:35.836653 | dc0cc36f-f424-4efb-8ce0-d74a041b463f ==============================
+[0m06:32:35.836653 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m06:32:35.836945 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'empty': 'None', 'indirect_selection': 'eager', 'write_json': 'True', 'printer_width': '80', 'profiles_dir': '/opt/airflow/dbt', 'cache_selected_only': 'False', 'use_colors': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'version_check': 'True', 'fail_fast': 'False', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt test --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt', 'warn_error': 'None', 'quiet': 'False', 'introspect': 'True', 'log_path': '/opt/airflow/dbt/logs', 'partial_parse': 'True', 'static_parser': 'True', 'use_experimental_parser': 'False', 'no_print': 'None'}
+[0m06:32:36.093490 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m06:32:36.093880 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m06:32:36.094123 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m06:32:36.208181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dc0cc36f-f424-4efb-8ce0-d74a041b463f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff98914c20>]}
+[0m06:32:36.251628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dc0cc36f-f424-4efb-8ce0-d74a041b463f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff75d0a6c0>]}
+[0m06:32:36.252194 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m06:32:36.303898 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m06:32:36.373161 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m06:32:36.373447 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m06:32:36.388799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dc0cc36f-f424-4efb-8ce0-d74a041b463f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7830fa10>]}
+[0m06:32:36.423642 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m06:32:36.425670 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m06:32:36.447519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dc0cc36f-f424-4efb-8ce0-d74a041b463f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff74f997c0>]}
+[0m06:32:36.447806 [info ] [MainThread]: Found 2 models, 1 source, 504 macros
+[0m06:32:36.447980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dc0cc36f-f424-4efb-8ce0-d74a041b463f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff75398da0>]}
+[0m06:32:36.448849 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m06:32:36.449711 [debug] [MainThread]: Command end result
+[0m06:32:36.501138 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m06:32:36.504070 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m06:32:36.507223 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt/target/run_results.json
+[0m06:32:36.507752 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.7032575, "process_in_blocks": "0", "process_kernel_time": 0.149647, "process_mem_max_rss": "211772", "process_out_blocks": "2031", "process_user_time": 2.158341}
+[0m06:32:36.508032 [debug] [MainThread]: Command `dbt test` succeeded at 06:32:36.507988 after 0.70 seconds
+[0m06:32:36.508206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff95ca5a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9ac169c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff95ec2660>]}
+[0m06:32:36.508354 [debug] [MainThread]: Flushing usage events
+[0m06:32:36.905909 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:02:18.246015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff88c83230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b007740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff88b2f7d0>]}
+
+
+============================== 00:02:18.256093 | 8e88ac9d-6751-4443-8b29-0a07e5667c0d ==============================
+[0m00:02:18.256093 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m00:02:18.257200 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'fail_fast': 'False', 'no_print': 'None', 'log_cache_events': 'False', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'empty': 'False', 'write_json': 'True', 'use_colors': 'True', 'static_parser': 'True', 'printer_width': '80', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt', 'log_path': '/opt/airflow/dbt/logs', 'version_check': 'True', 'log_format': 'default', 'partial_parse': 'True', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/dbt', 'warn_error': 'None', 'indirect_selection': 'eager'}
+[0m00:02:18.670695 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m00:02:18.670976 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m00:02:18.671093 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m00:02:18.844785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8e88ac9d-6751-4443-8b29-0a07e5667c0d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8a8b4f20>]}
+[0m00:02:18.874626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8e88ac9d-6751-4443-8b29-0a07e5667c0d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff67352840>]}
+[0m00:02:18.875131 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m00:02:18.945582 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m00:02:19.010226 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m00:02:19.010602 [debug] [MainThread]: Partial parsing: added file: my_weather_project://snapshots/weather_snapshot.sql
+[0m00:02:19.010996 [debug] [MainThread]: Partial parsing: added file: my_weather_project://models/marts/schema.yml
+[0m00:02:19.269171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8e88ac9d-6751-4443-8b29-0a07e5667c0d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff670b7740>]}
+[0m00:02:19.358759 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m00:02:19.362834 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m00:02:19.383309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8e88ac9d-6751-4443-8b29-0a07e5667c0d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6724da90>]}
+[0m00:02:19.383570 [info ] [MainThread]: Found 2 models, 1 snapshot, 2 data tests, 1 source, 504 macros
+[0m00:02:19.383765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8e88ac9d-6751-4443-8b29-0a07e5667c0d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff87c58b00>]}
+[0m00:02:19.384615 [info ] [MainThread]: 
+[0m00:02:19.384915 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m00:02:19.385095 [info ] [MainThread]: 
+[0m00:02:19.385347 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:02:19.387096 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_POODLE'
+[0m00:02:19.404487 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE"
+[0m00:02:19.404709 [debug] [ThreadPool]: On list_USER_DB_POODLE: show terse schemas in database USER_DB_POODLE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE"} */
+[0m00:02:19.404844 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:02:19.960382 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.555 seconds
+[0m00:02:19.963843 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE"
+[0m00:02:19.964165 [debug] [ThreadPool]: On list_USER_DB_POODLE: show terse schemas in database USER_DB_POODLE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE"} */
+[0m00:02:20.097652 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.133 seconds
+[0m00:02:20.102752 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE, now list_USER_DB_POODLE_ANALYTICS)
+[0m00:02:20.121808 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS"
+[0m00:02:20.122362 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS: show objects in USER_DB_POODLE.ANALYTICS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS"} */;
+[0m00:02:20.985398 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.862 seconds
+[0m00:02:20.988914 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS, now list_USER_DB_POODLE_ANALYTICS_staging)
+[0m00:02:20.992308 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS_staging"
+[0m00:02:20.992648 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS_staging: show objects in USER_DB_POODLE.ANALYTICS_staging
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS_staging"} */;
+[0m00:02:21.476190 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.483 seconds
+[0m00:02:21.478068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8e88ac9d-6751-4443-8b29-0a07e5667c0d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff65fc3ec0>]}
+[0m00:02:21.481292 [debug] [Thread-1 (]: Began running node model.my_weather_project.stg_weather
+[0m00:02:21.481710 [info ] [Thread-1 (]: 1 of 2 START sql view model ANALYTICS_staging.stg_weather ...................... [RUN]
+[0m00:02:21.482136 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS_staging, now model.my_weather_project.stg_weather)
+[0m00:02:21.482554 [debug] [Thread-1 (]: Began compiling node model.my_weather_project.stg_weather
+[0m00:02:21.486940 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_weather_project.stg_weather"
+[0m00:02:21.494509 [debug] [Thread-1 (]: Began executing node model.my_weather_project.stg_weather
+[0m00:02:21.508256 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_weather_project.stg_weather"
+[0m00:02:21.535953 [debug] [Thread-1 (]: Using snowflake connection "model.my_weather_project.stg_weather"
+[0m00:02:21.536188 [debug] [Thread-1 (]: On model.my_weather_project.stg_weather: create or replace   view USER_DB_POODLE.ANALYTICS_staging.stg_weather
+  
+  
+  
+  
+  as (
+    SELECT
+    forecast_date,
+    max_temp,
+    min_temp,
+    precipitation,
+    wind_speed
+FROM USER_DB_POODLE.RAW.weather_history
+  )
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "model.my_weather_project.stg_weather"} */;
+[0m00:02:21.904422 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.368 seconds
+[0m00:02:21.935691 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8e88ac9d-6751-4443-8b29-0a07e5667c0d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8a8b41d0>]}
+[0m00:02:21.936248 [info ] [Thread-1 (]: 1 of 2 OK created sql view model ANALYTICS_staging.stg_weather ................. [[32mSUCCESS 1[0m in 0.45s]
+[0m00:02:21.936747 [debug] [Thread-1 (]: Finished running node model.my_weather_project.stg_weather
+[0m00:02:21.937917 [debug] [Thread-1 (]: Began running node model.my_weather_project.weather_analytics
+[0m00:02:21.938484 [info ] [Thread-1 (]: 2 of 2 START sql table model ANALYTICS.weather_analytics ....................... [RUN]
+[0m00:02:21.939857 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_weather_project.stg_weather, now model.my_weather_project.weather_analytics)
+[0m00:02:21.940291 [debug] [Thread-1 (]: Began compiling node model.my_weather_project.weather_analytics
+[0m00:02:21.943081 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_weather_project.weather_analytics"
+[0m00:02:21.952301 [debug] [Thread-1 (]: Began executing node model.my_weather_project.weather_analytics
+[0m00:02:21.966435 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_weather_project.weather_analytics"
+[0m00:02:21.974148 [debug] [Thread-1 (]: Using snowflake connection "model.my_weather_project.weather_analytics"
+[0m00:02:21.974437 [debug] [Thread-1 (]: On model.my_weather_project.weather_analytics: create or replace transient table USER_DB_POODLE.ANALYTICS.weather_analytics
+    
+    
+    
+    as (
+
+WITH source_data AS (
+    SELECT * FROM USER_DB_POODLE.ANALYTICS_staging.stg_weather
+)
+
+SELECT
+    forecast_date,
+    max_temp,
+    min_temp,
+    precipitation,
+    wind_speed,
+    
+    -- Transformation 1: Calculate Temperature Range
+    (max_temp - min_temp) as temp_variation,
+    
+    -- Transformation 2: 7-Day Moving Average of Max Temp (Window Function)
+    AVG(max_temp) OVER (
+        ORDER BY forecast_date 
+        ROWS BETWEEN 6 PRECEDING AND CURRENT ROW
+    ) as seven_day_avg_max_temp,
+    
+    -- Transformation 3: Categorize Days
+    CASE 
+        WHEN precipitation > 0 THEN 'Rainy'
+        ELSE 'Dry'
+    END as rain_status,
+
+    CASE
+        WHEN wind_speed > 20 THEN 'High Wind'
+        ELSE 'Normal Wind'
+    END as wind_status
+
+FROM source_data
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "model.my_weather_project.weather_analytics"} */;
+[0m00:02:23.933144 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.958 seconds
+[0m00:02:23.935947 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8e88ac9d-6751-4443-8b29-0a07e5667c0d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff65e57c50>]}
+[0m00:02:23.936462 [info ] [Thread-1 (]: 2 of 2 OK created sql table model ANALYTICS.weather_analytics .................. [[32mSUCCESS 1[0m in 2.00s]
+[0m00:02:23.937123 [debug] [Thread-1 (]: Finished running node model.my_weather_project.weather_analytics
+[0m00:02:23.941906 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:02:23.942290 [debug] [MainThread]: Connection 'model.my_weather_project.weather_analytics' was left open.
+[0m00:02:23.942643 [debug] [MainThread]: On model.my_weather_project.weather_analytics: Close
+[0m00:02:24.106889 [info ] [MainThread]: 
+[0m00:02:24.107266 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 4.72 seconds (4.72s).
+[0m00:02:24.108025 [debug] [MainThread]: Command end result
+[0m00:02:24.125062 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m00:02:24.128026 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m00:02:24.138279 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt/target/run_results.json
+[0m00:02:24.138463 [info ] [MainThread]: 
+[0m00:02:24.138704 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:02:24.139021 [info ] [MainThread]: 
+[0m00:02:24.139246 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m00:02:24.140611 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.966097, "process_in_blocks": "62552", "process_kernel_time": 0.336586, "process_mem_max_rss": "227692", "process_out_blocks": "3146", "process_user_time": 2.623123}
+[0m00:02:24.140938 [debug] [MainThread]: Command `dbt run` succeeded at 00:02:24.140882 after 5.97 seconds
+[0m00:02:24.141176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff88540050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8857fe90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8857ddf0>]}
+[0m00:02:24.141345 [debug] [MainThread]: Flushing usage events
+[0m00:02:24.583418 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:02:26.458236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff952b5d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff924311f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff93488b30>]}
+
+
+============================== 00:02:26.461721 | fe7382a3-30d8-431f-a6a2-9037d6a456c5 ==============================
+[0m00:02:26.461721 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m00:02:26.462042 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/dbt', 'printer_width': '80', 'empty': 'None', 'use_colors': 'True', 'introspect': 'True', 'partial_parse': 'True', 'version_check': 'True', 'log_cache_events': 'False', 'log_path': '/opt/airflow/dbt/logs', 'target_path': 'None', 'invocation_command': 'dbt test --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt', 'debug': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'no_print': 'None', 'write_json': 'True', 'fail_fast': 'False', 'static_parser': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'send_anonymous_usage_stats': 'True'}
+[0m00:02:26.739112 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m00:02:26.739387 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m00:02:26.739552 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m00:02:26.834119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fe7382a3-30d8-431f-a6a2-9037d6a456c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff71e52000>]}
+[0m00:02:26.864053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fe7382a3-30d8-431f-a6a2-9037d6a456c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff922160f0>]}
+[0m00:02:26.864442 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m00:02:26.907459 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m00:02:26.973613 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:02:26.973925 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:02:26.997730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fe7382a3-30d8-431f-a6a2-9037d6a456c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff71aa9c70>]}
+[0m00:02:27.081600 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m00:02:27.085063 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m00:02:27.102899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fe7382a3-30d8-431f-a6a2-9037d6a456c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff71620380>]}
+[0m00:02:27.103151 [info ] [MainThread]: Found 2 models, 1 snapshot, 2 data tests, 1 source, 504 macros
+[0m00:02:27.103367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fe7382a3-30d8-431f-a6a2-9037d6a456c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff716838c0>]}
+[0m00:02:27.104369 [info ] [MainThread]: 
+[0m00:02:27.104546 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m00:02:27.104743 [info ] [MainThread]: 
+[0m00:02:27.105024 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:02:27.106859 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_POODLE_ANALYTICS_staging'
+[0m00:02:27.126729 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS_staging"
+[0m00:02:27.126957 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS_staging: show objects in USER_DB_POODLE.ANALYTICS_staging
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS_staging"} */;
+[0m00:02:27.127112 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:02:27.941826 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.814 seconds
+[0m00:02:27.946462 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS_staging, now list_USER_DB_POODLE_ANALYTICS)
+[0m00:02:27.951682 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS"
+[0m00:02:27.952129 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS: show objects in USER_DB_POODLE.ANALYTICS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS"} */;
+[0m00:02:28.136492 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.184 seconds
+[0m00:02:28.141944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fe7382a3-30d8-431f-a6a2-9037d6a456c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7140f980>]}
+[0m00:02:28.148798 [debug] [Thread-1 (]: Began running node test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95
+[0m00:02:28.149498 [info ] [Thread-1 (]: 1 of 2 START test not_null_weather_analytics_forecast_date ..................... [RUN]
+[0m00:02:28.150935 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS, now test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95)
+[0m00:02:28.151609 [debug] [Thread-1 (]: Began compiling node test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95
+[0m00:02:28.166108 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95"
+[0m00:02:28.169423 [debug] [Thread-1 (]: Began executing node test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95
+[0m00:02:28.183506 [debug] [Thread-1 (]: Writing runtime sql for node "test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95"
+[0m00:02:28.185930 [debug] [Thread-1 (]: Using snowflake connection "test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95"
+[0m00:02:28.186181 [debug] [Thread-1 (]: On test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select forecast_date
+from USER_DB_POODLE.ANALYTICS.weather_analytics
+where forecast_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95"} */
+[0m00:02:28.749353 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.563 seconds
+[0m00:02:28.764838 [info ] [Thread-1 (]: 1 of 2 PASS not_null_weather_analytics_forecast_date ........................... [[32mPASS[0m in 0.61s]
+[0m00:02:28.766019 [debug] [Thread-1 (]: Finished running node test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95
+[0m00:02:28.766572 [debug] [Thread-1 (]: Began running node test.my_weather_project.unique_weather_analytics_forecast_date.df98085381
+[0m00:02:28.767146 [info ] [Thread-1 (]: 2 of 2 START test unique_weather_analytics_forecast_date ....................... [RUN]
+[0m00:02:28.767933 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95, now test.my_weather_project.unique_weather_analytics_forecast_date.df98085381)
+[0m00:02:28.768329 [debug] [Thread-1 (]: Began compiling node test.my_weather_project.unique_weather_analytics_forecast_date.df98085381
+[0m00:02:28.775672 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_weather_project.unique_weather_analytics_forecast_date.df98085381"
+[0m00:02:28.779024 [debug] [Thread-1 (]: Began executing node test.my_weather_project.unique_weather_analytics_forecast_date.df98085381
+[0m00:02:28.781160 [debug] [Thread-1 (]: Writing runtime sql for node "test.my_weather_project.unique_weather_analytics_forecast_date.df98085381"
+[0m00:02:28.784068 [debug] [Thread-1 (]: Using snowflake connection "test.my_weather_project.unique_weather_analytics_forecast_date.df98085381"
+[0m00:02:28.784347 [debug] [Thread-1 (]: On test.my_weather_project.unique_weather_analytics_forecast_date.df98085381: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    forecast_date as unique_field,
+    count(*) as n_records
+
+from USER_DB_POODLE.ANALYTICS.weather_analytics
+where forecast_date is not null
+group by forecast_date
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "test.my_weather_project.unique_weather_analytics_forecast_date.df98085381"} */
+[0m00:02:29.021012 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.236 seconds
+[0m00:02:29.025656 [info ] [Thread-1 (]: 2 of 2 PASS unique_weather_analytics_forecast_date ............................. [[32mPASS[0m in 0.26s]
+[0m00:02:29.027139 [debug] [Thread-1 (]: Finished running node test.my_weather_project.unique_weather_analytics_forecast_date.df98085381
+[0m00:02:29.029418 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:02:29.029953 [debug] [MainThread]: Connection 'test.my_weather_project.unique_weather_analytics_forecast_date.df98085381' was left open.
+[0m00:02:29.030427 [debug] [MainThread]: On test.my_weather_project.unique_weather_analytics_forecast_date.df98085381: Close
+[0m00:02:29.178776 [info ] [MainThread]: 
+[0m00:02:29.179889 [info ] [MainThread]: Finished running 2 data tests in 0 hours 0 minutes and 2.07 seconds (2.07s).
+[0m00:02:29.181455 [debug] [MainThread]: Command end result
+[0m00:02:29.220797 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m00:02:29.223258 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m00:02:29.229853 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt/target/run_results.json
+[0m00:02:29.230206 [info ] [MainThread]: 
+[0m00:02:29.230882 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:02:29.231185 [info ] [MainThread]: 
+[0m00:02:29.231562 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m00:02:29.232492 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 2.8012648, "process_in_blocks": "1120", "process_kernel_time": 0.214096, "process_mem_max_rss": "223708", "process_out_blocks": "2105", "process_user_time": 2.424738}
+[0m00:02:29.232853 [debug] [MainThread]: Command `dbt test` succeeded at 00:02:29.232779 after 2.80 seconds
+[0m00:02:29.233125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff95125160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff929b8f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff929bbb60>]}
+[0m00:02:29.233376 [debug] [MainThread]: Flushing usage events
+[0m00:02:29.590757 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:02:31.567839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8ea571a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9097f530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e75fd70>]}
+
+
+============================== 00:02:31.571240 | 61010021-2daa-4180-a5f3-103baefe84e9 ==============================
+[0m00:02:31.571240 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m00:02:31.571528 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt snapshot --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt', 'profiles_dir': '/opt/airflow/dbt', 'printer_width': '80', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'use_colors': 'True', 'quiet': 'False', 'fail_fast': 'False', 'indirect_selection': 'eager', 'warn_error': 'None', 'empty': 'False', 'target_path': 'None', 'static_parser': 'True', 'log_path': '/opt/airflow/dbt/logs', 'cache_selected_only': 'False', 'introspect': 'True', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'debug': 'False', 'write_json': 'True', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m00:02:31.823257 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m00:02:31.823551 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m00:02:31.823718 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m00:02:31.906837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '61010021-2daa-4180-a5f3-103baefe84e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8de04d40>]}
+[0m00:02:31.956286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '61010021-2daa-4180-a5f3-103baefe84e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6d2709b0>]}
+[0m00:02:31.956864 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m00:02:32.011879 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m00:02:32.068636 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:02:32.068860 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:02:32.090671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '61010021-2daa-4180-a5f3-103baefe84e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6cea32f0>]}
+[0m00:02:32.171708 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m00:02:32.174716 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m00:02:32.189308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '61010021-2daa-4180-a5f3-103baefe84e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6cab8320>]}
+[0m00:02:32.189689 [info ] [MainThread]: Found 2 models, 1 snapshot, 2 data tests, 1 source, 504 macros
+[0m00:02:32.189938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61010021-2daa-4180-a5f3-103baefe84e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6cf664e0>]}
+[0m00:02:32.191405 [info ] [MainThread]: 
+[0m00:02:32.191823 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m00:02:32.192175 [info ] [MainThread]: 
+[0m00:02:32.192756 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:02:32.193752 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_POODLE'
+[0m00:02:32.210523 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE"
+[0m00:02:32.210726 [debug] [ThreadPool]: On list_USER_DB_POODLE: show terse schemas in database USER_DB_POODLE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE"} */
+[0m00:02:32.210859 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:02:32.968714 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.757 seconds
+[0m00:02:32.981337 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE, now list_USER_DB_POODLE_ANALYTICS_staging)
+[0m00:02:32.998344 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS_staging"
+[0m00:02:32.998842 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS_staging: show objects in USER_DB_POODLE.ANALYTICS_staging
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS_staging"} */;
+[0m00:02:33.189756 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.190 seconds
+[0m00:02:33.193122 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS_staging, now list_USER_DB_POODLE_ANALYTICS)
+[0m00:02:33.196378 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS"
+[0m00:02:33.196766 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS: show objects in USER_DB_POODLE.ANALYTICS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS"} */;
+[0m00:02:33.313124 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.116 seconds
+[0m00:02:33.320467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61010021-2daa-4180-a5f3-103baefe84e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e779880>]}
+[0m00:02:33.331207 [debug] [Thread-1 (]: Began running node snapshot.my_weather_project.weather_snapshot
+[0m00:02:33.332471 [info ] [Thread-1 (]: 1 of 1 START snapshot ANALYTICS.weather_snapshot ............................... [RUN]
+[0m00:02:33.333707 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS, now snapshot.my_weather_project.weather_snapshot)
+[0m00:02:33.334248 [debug] [Thread-1 (]: Began compiling node snapshot.my_weather_project.weather_snapshot
+[0m00:02:33.343845 [debug] [Thread-1 (]: Began executing node snapshot.my_weather_project.weather_snapshot
+[0m00:02:33.437097 [debug] [Thread-1 (]: Using snowflake connection "snapshot.my_weather_project.weather_snapshot"
+[0m00:02:33.437692 [debug] [Thread-1 (]: On snapshot.my_weather_project.weather_snapshot: select * from (
+        
+    
+
+    select *,
+        md5(coalesce(cast(forecast_date as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+        
+  
+  coalesce(nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))), null)
+  as dbt_valid_to
+from (
+        
+
+
+
+select * from USER_DB_POODLE.RAW.weather_history
+
+    ) sbq
+
+
+
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+[0m00:02:33.793790 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.356 seconds
+[0m00:02:33.796896 [debug] [Thread-1 (]: Using snowflake connection "snapshot.my_weather_project.weather_snapshot"
+[0m00:02:33.797217 [debug] [Thread-1 (]: On snapshot.my_weather_project.weather_snapshot: select * from (
+        select to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_snapshot_time
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+[0m00:02:33.887428 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.090 seconds
+[0m00:02:33.889112 [debug] [Thread-1 (]: Writing runtime sql for node "snapshot.my_weather_project.weather_snapshot"
+[0m00:02:33.894281 [debug] [Thread-1 (]: Using snowflake connection "snapshot.my_weather_project.weather_snapshot"
+[0m00:02:33.894889 [debug] [Thread-1 (]: On snapshot.my_weather_project.weather_snapshot: create or replace transient table USER_DB_POODLE.ANALYTICS.weather_snapshot
+    
+    
+    
+    as (
+    
+
+    select *,
+        md5(coalesce(cast(forecast_date as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+        
+  
+  coalesce(nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))), null)
+  as dbt_valid_to
+from (
+        
+
+
+
+select * from USER_DB_POODLE.RAW.weather_history
+
+    ) sbq
+
+
+
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */;
+[0m00:02:34.699382 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.804 seconds
+[0m00:02:34.722450 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '61010021-2daa-4180-a5f3-103baefe84e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff902e3fe0>]}
+[0m00:02:34.723572 [info ] [Thread-1 (]: 1 of 1 OK snapshotted ANALYTICS.weather_snapshot ............................... [[32mSUCCESS 1[0m in 1.39s]
+[0m00:02:34.724524 [debug] [Thread-1 (]: Finished running node snapshot.my_weather_project.weather_snapshot
+[0m00:02:34.726994 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:02:34.727674 [debug] [MainThread]: Connection 'snapshot.my_weather_project.weather_snapshot' was left open.
+[0m00:02:34.728082 [debug] [MainThread]: On snapshot.my_weather_project.weather_snapshot: Close
+[0m00:02:34.868681 [info ] [MainThread]: 
+[0m00:02:34.869722 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 2.68 seconds (2.68s).
+[0m00:02:34.870824 [debug] [MainThread]: Command end result
+[0m00:02:34.905809 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m00:02:34.910062 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m00:02:34.921722 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt/target/run_results.json
+[0m00:02:34.922149 [info ] [MainThread]: 
+[0m00:02:34.922539 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:02:34.923001 [info ] [MainThread]: 
+[0m00:02:34.923665 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m00:02:34.925070 [debug] [MainThread]: Resource report: {"command_name": "snapshot", "command_success": true, "command_wall_clock_time": 3.3915865, "process_in_blocks": "8", "process_kernel_time": 0.146243, "process_mem_max_rss": "223312", "process_out_blocks": "2102", "process_user_time": 2.498153}
+[0m00:02:34.925738 [debug] [MainThread]: Command `dbt snapshot` succeeded at 00:02:34.925540 after 3.39 seconds
+[0m00:02:34.926315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6cf659d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6cf658e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6cf65580>]}
+[0m00:02:34.926772 [debug] [MainThread]: Flushing usage events
+[0m00:02:35.294796 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:10:33.484194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb8a9ffe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffbceb4920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb8950fb0>]}
+
+
+============================== 00:10:33.490722 | 4c95a97c-6f08-429b-8de6-dd77074bea98 ==============================
+[0m00:10:33.490722 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m00:10:33.491194 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'log_cache_events': 'False', 'fail_fast': 'False', 'indirect_selection': 'eager', 'no_print': 'None', 'cache_selected_only': 'False', 'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'profiles_dir': '/opt/airflow/dbt', 'log_format': 'default', 'use_experimental_parser': 'False', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'log_path': '/opt/airflow/dbt/logs', 'target_path': 'None', 'debug': 'False', 'empty': 'False', 'printer_width': '80', 'use_colors': 'True', 'quiet': 'False', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt'}
+[0m00:10:33.494944 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_ACCOUNT'
+[0m00:10:33.495597 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.04548821, "process_in_blocks": "36904", "process_kernel_time": 0.306098, "process_mem_max_rss": "106412", "process_out_blocks": "1970", "process_user_time": 1.012635}
+[0m00:10:33.495862 [debug] [MainThread]: Command `dbt run` failed at 00:10:33.495821 after 0.05 seconds
+[0m00:10:33.496047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffbd6a71a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb88e7e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb8a9ffe0>]}
+[0m00:10:33.496235 [debug] [MainThread]: Flushing usage events
+[0m00:10:33.945697 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:13:28.389584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb4d53d40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb521be00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb499a090>]}
+
+
+============================== 00:13:28.393131 | 6d0a4b23-7bf5-4748-a584-8c1aad3460b0 ==============================
+[0m00:13:28.393131 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m00:13:28.393426 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt', 'use_experimental_parser': 'False', 'write_json': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'log_path': '/opt/airflow/dbt/logs', 'quiet': 'False', 'target_path': 'None', 'static_parser': 'True', 'warn_error': 'None', 'introspect': 'True', 'empty': 'False', 'indirect_selection': 'eager', 'no_print': 'None', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'fail_fast': 'False', 'profiles_dir': '/opt/airflow/dbt', 'log_cache_events': 'False', 'partial_parse': 'True', 'printer_width': '80'}
+[0m00:13:29.400799 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m00:13:29.401098 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m00:13:29.401377 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m00:13:29.546119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6d0a4b23-7bf5-4748-a584-8c1aad3460b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff947be4b0>]}
+[0m00:13:29.575728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6d0a4b23-7bf5-4748-a584-8c1aad3460b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb54f05c0>]}
+[0m00:13:29.576192 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m00:13:29.620861 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m00:13:29.694875 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:13:29.695096 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:13:29.717730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6d0a4b23-7bf5-4748-a584-8c1aad3460b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff93c97860>]}
+[0m00:13:29.802536 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m00:13:29.806053 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m00:13:29.841803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6d0a4b23-7bf5-4748-a584-8c1aad3460b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff93c99be0>]}
+[0m00:13:29.842062 [info ] [MainThread]: Found 2 models, 1 snapshot, 2 data tests, 1 source, 504 macros
+[0m00:13:29.842232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6d0a4b23-7bf5-4748-a584-8c1aad3460b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff93cd1a90>]}
+[0m00:13:29.842986 [info ] [MainThread]: 
+[0m00:13:29.843228 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m00:13:29.843444 [info ] [MainThread]: 
+[0m00:13:29.843762 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:13:29.845446 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_POODLE'
+[0m00:13:29.867723 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE"
+[0m00:13:29.867992 [debug] [ThreadPool]: On list_USER_DB_POODLE: show terse schemas in database USER_DB_POODLE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE"} */
+[0m00:13:29.868117 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:13:31.478633 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.610 seconds
+[0m00:13:31.562725 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE"
+[0m00:13:31.563019 [debug] [ThreadPool]: On list_USER_DB_POODLE: show terse schemas in database USER_DB_POODLE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE"} */
+[0m00:13:31.692172 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.129 seconds
+[0m00:13:31.694525 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE, now list_USER_DB_POODLE_ANALYTICS_staging)
+[0m00:13:31.705027 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS_staging"
+[0m00:13:31.705388 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS_staging: show objects in USER_DB_POODLE.ANALYTICS_staging
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS_staging"} */;
+[0m00:13:32.194615 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.489 seconds
+[0m00:13:32.195891 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS_staging, now list_USER_DB_POODLE_ANALYTICS)
+[0m00:13:32.197508 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS"
+[0m00:13:32.197723 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS: show objects in USER_DB_POODLE.ANALYTICS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS"} */;
+[0m00:13:32.505302 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.307 seconds
+[0m00:13:32.511386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6d0a4b23-7bf5-4748-a584-8c1aad3460b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff93c3f1d0>]}
+[0m00:13:32.518011 [debug] [Thread-1 (]: Began running node model.my_weather_project.stg_weather
+[0m00:13:32.519255 [info ] [Thread-1 (]: 1 of 2 START sql view model ANALYTICS_staging.stg_weather ...................... [RUN]
+[0m00:13:32.520054 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS, now model.my_weather_project.stg_weather)
+[0m00:13:32.520720 [debug] [Thread-1 (]: Began compiling node model.my_weather_project.stg_weather
+[0m00:13:32.529082 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_weather_project.stg_weather"
+[0m00:13:32.535058 [debug] [Thread-1 (]: Began executing node model.my_weather_project.stg_weather
+[0m00:13:32.558892 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_weather_project.stg_weather"
+[0m00:13:32.560809 [debug] [Thread-1 (]: Using snowflake connection "model.my_weather_project.stg_weather"
+[0m00:13:32.561168 [debug] [Thread-1 (]: On model.my_weather_project.stg_weather: create or replace   view USER_DB_POODLE.ANALYTICS_staging.stg_weather
+  
+  
+  
+  
+  as (
+    SELECT
+    forecast_date,
+    max_temp,
+    min_temp,
+    precipitation,
+    wind_speed
+FROM USER_DB_POODLE.RAW.weather_history
+  )
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "model.my_weather_project.stg_weather"} */;
+[0m00:13:33.324633 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.763 seconds
+[0m00:13:33.354084 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6d0a4b23-7bf5-4748-a584-8c1aad3460b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb75c8b00>]}
+[0m00:13:33.354925 [info ] [Thread-1 (]: 1 of 2 OK created sql view model ANALYTICS_staging.stg_weather ................. [[32mSUCCESS 1[0m in 0.83s]
+[0m00:13:33.355566 [debug] [Thread-1 (]: Finished running node model.my_weather_project.stg_weather
+[0m00:13:33.356515 [debug] [Thread-1 (]: Began running node model.my_weather_project.weather_analytics
+[0m00:13:33.357108 [info ] [Thread-1 (]: 2 of 2 START sql table model ANALYTICS.weather_analytics ....................... [RUN]
+[0m00:13:33.357596 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_weather_project.stg_weather, now model.my_weather_project.weather_analytics)
+[0m00:13:33.358011 [debug] [Thread-1 (]: Began compiling node model.my_weather_project.weather_analytics
+[0m00:13:33.360802 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_weather_project.weather_analytics"
+[0m00:13:33.363058 [debug] [Thread-1 (]: Began executing node model.my_weather_project.weather_analytics
+[0m00:13:33.378023 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_weather_project.weather_analytics"
+[0m00:13:33.379884 [debug] [Thread-1 (]: Using snowflake connection "model.my_weather_project.weather_analytics"
+[0m00:13:33.380144 [debug] [Thread-1 (]: On model.my_weather_project.weather_analytics: create or replace transient table USER_DB_POODLE.ANALYTICS.weather_analytics
+    
+    
+    
+    as (
+
+WITH source_data AS (
+    SELECT * FROM USER_DB_POODLE.ANALYTICS_staging.stg_weather
+)
+
+SELECT
+    forecast_date,
+    max_temp,
+    min_temp,
+    precipitation,
+    wind_speed,
+    
+    -- Transformation 1: Calculate Temperature Range
+    (max_temp - min_temp) as temp_variation,
+    
+    -- Transformation 2: 7-Day Moving Average of Max Temp (Window Function)
+    AVG(max_temp) OVER (
+        ORDER BY forecast_date 
+        ROWS BETWEEN 6 PRECEDING AND CURRENT ROW
+    ) as seven_day_avg_max_temp,
+    
+    -- Transformation 3: Categorize Days
+    CASE 
+        WHEN precipitation > 0 THEN 'Rainy'
+        ELSE 'Dry'
+    END as rain_status,
+
+    CASE
+        WHEN wind_speed > 20 THEN 'High Wind'
+        ELSE 'Normal Wind'
+    END as wind_status
+
+FROM source_data
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "model.my_weather_project.weather_analytics"} */;
+[0m00:13:35.573218 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.193 seconds
+[0m00:13:35.576661 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6d0a4b23-7bf5-4748-a584-8c1aad3460b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff92d05580>]}
+[0m00:13:35.577399 [info ] [Thread-1 (]: 2 of 2 OK created sql table model ANALYTICS.weather_analytics .................. [[32mSUCCESS 1[0m in 2.22s]
+[0m00:13:35.578133 [debug] [Thread-1 (]: Finished running node model.my_weather_project.weather_analytics
+[0m00:13:35.579674 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:13:35.580089 [debug] [MainThread]: Connection 'model.my_weather_project.weather_analytics' was left open.
+[0m00:13:35.580520 [debug] [MainThread]: On model.my_weather_project.weather_analytics: Close
+[0m00:13:35.885081 [info ] [MainThread]: 
+[0m00:13:35.886245 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 6.04 seconds (6.04s).
+[0m00:13:35.888022 [debug] [MainThread]: Command end result
+[0m00:13:35.919743 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m00:13:35.922277 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m00:13:35.926906 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt/target/run_results.json
+[0m00:13:35.927172 [info ] [MainThread]: 
+[0m00:13:35.927597 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:13:35.927888 [info ] [MainThread]: 
+[0m00:13:35.928174 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m00:13:35.929215 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 7.576698, "process_in_blocks": "36192", "process_kernel_time": 0.540151, "process_mem_max_rss": "226696", "process_out_blocks": "15551", "process_user_time": 3.047497}
+[0m00:13:35.929626 [debug] [MainThread]: Command `dbt run` succeeded at 00:13:35.929556 after 7.58 seconds
+[0m00:13:35.929920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb4d263f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff92f5e150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff92f5e930>]}
+[0m00:13:35.930219 [debug] [MainThread]: Flushing usage events
+[0m00:13:36.393437 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:14:19.102047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7b1adb80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7aae2660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7ac56900>]}
+
+
+============================== 00:14:19.105649 | b0a66465-a467-47e1-ac8d-3fc2bcfc1b37 ==============================
+[0m00:14:19.105649 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m00:14:19.105978 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'invocation_command': 'dbt test --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt', 'printer_width': '80', 'version_check': 'True', 'use_colors': 'True', 'profiles_dir': '/opt/airflow/dbt', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'debug': 'False', 'log_format': 'default', 'write_json': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'introspect': 'True', 'log_path': '/opt/airflow/dbt/logs', 'no_print': 'None', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'target_path': 'None', 'cache_selected_only': 'False', 'indirect_selection': 'eager'}
+[0m00:14:19.406369 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m00:14:19.406701 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m00:14:19.406896 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m00:14:19.493630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b0a66465-a467-47e1-ac8d-3fc2bcfc1b37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff5c9a8bf0>]}
+[0m00:14:19.523120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b0a66465-a467-47e1-ac8d-3fc2bcfc1b37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff59e01d30>]}
+[0m00:14:19.523523 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m00:14:19.567724 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m00:14:19.629621 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:14:19.629875 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:14:19.653371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b0a66465-a467-47e1-ac8d-3fc2bcfc1b37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff59a76ae0>]}
+[0m00:14:19.741171 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m00:14:19.744792 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m00:14:19.768408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b0a66465-a467-47e1-ac8d-3fc2bcfc1b37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff595cbbc0>]}
+[0m00:14:19.768757 [info ] [MainThread]: Found 2 models, 1 snapshot, 2 data tests, 1 source, 504 macros
+[0m00:14:19.769028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b0a66465-a467-47e1-ac8d-3fc2bcfc1b37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff59994140>]}
+[0m00:14:19.770163 [info ] [MainThread]: 
+[0m00:14:19.770418 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m00:14:19.770614 [info ] [MainThread]: 
+[0m00:14:19.770970 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:14:19.773033 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_POODLE_ANALYTICS'
+[0m00:14:19.792611 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS"
+[0m00:14:19.792868 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS: show objects in USER_DB_POODLE.ANALYTICS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS"} */;
+[0m00:14:19.793047 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:14:20.484528 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.691 seconds
+[0m00:14:20.486143 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS, now list_USER_DB_POODLE_ANALYTICS_staging)
+[0m00:14:20.488346 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS_staging"
+[0m00:14:20.488611 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS_staging: show objects in USER_DB_POODLE.ANALYTICS_staging
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS_staging"} */;
+[0m00:14:20.645741 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.157 seconds
+[0m00:14:20.650055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b0a66465-a467-47e1-ac8d-3fc2bcfc1b37', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff595b8ad0>]}
+[0m00:14:20.656354 [debug] [Thread-1 (]: Began running node test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95
+[0m00:14:20.656978 [info ] [Thread-1 (]: 1 of 2 START test not_null_weather_analytics_forecast_date ..................... [RUN]
+[0m00:14:20.658135 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS_staging, now test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95)
+[0m00:14:20.658719 [debug] [Thread-1 (]: Began compiling node test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95
+[0m00:14:20.673038 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95"
+[0m00:14:20.676279 [debug] [Thread-1 (]: Began executing node test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95
+[0m00:14:20.690964 [debug] [Thread-1 (]: Writing runtime sql for node "test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95"
+[0m00:14:20.692787 [debug] [Thread-1 (]: Using snowflake connection "test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95"
+[0m00:14:20.693071 [debug] [Thread-1 (]: On test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select forecast_date
+from USER_DB_POODLE.ANALYTICS.weather_analytics
+where forecast_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95"} */
+[0m00:14:21.146124 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.453 seconds
+[0m00:14:21.159068 [info ] [Thread-1 (]: 1 of 2 PASS not_null_weather_analytics_forecast_date ........................... [[32mPASS[0m in 0.50s]
+[0m00:14:21.159951 [debug] [Thread-1 (]: Finished running node test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95
+[0m00:14:21.160554 [debug] [Thread-1 (]: Began running node test.my_weather_project.unique_weather_analytics_forecast_date.df98085381
+[0m00:14:21.161045 [info ] [Thread-1 (]: 2 of 2 START test unique_weather_analytics_forecast_date ....................... [RUN]
+[0m00:14:21.161680 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_weather_project.not_null_weather_analytics_forecast_date.2bc62b7c95, now test.my_weather_project.unique_weather_analytics_forecast_date.df98085381)
+[0m00:14:21.162073 [debug] [Thread-1 (]: Began compiling node test.my_weather_project.unique_weather_analytics_forecast_date.df98085381
+[0m00:14:21.169367 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_weather_project.unique_weather_analytics_forecast_date.df98085381"
+[0m00:14:21.171406 [debug] [Thread-1 (]: Began executing node test.my_weather_project.unique_weather_analytics_forecast_date.df98085381
+[0m00:14:21.173403 [debug] [Thread-1 (]: Writing runtime sql for node "test.my_weather_project.unique_weather_analytics_forecast_date.df98085381"
+[0m00:14:21.175180 [debug] [Thread-1 (]: Using snowflake connection "test.my_weather_project.unique_weather_analytics_forecast_date.df98085381"
+[0m00:14:21.175476 [debug] [Thread-1 (]: On test.my_weather_project.unique_weather_analytics_forecast_date.df98085381: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    forecast_date as unique_field,
+    count(*) as n_records
+
+from USER_DB_POODLE.ANALYTICS.weather_analytics
+where forecast_date is not null
+group by forecast_date
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "test.my_weather_project.unique_weather_analytics_forecast_date.df98085381"} */
+[0m00:14:21.555164 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.379 seconds
+[0m00:14:21.559430 [info ] [Thread-1 (]: 2 of 2 PASS unique_weather_analytics_forecast_date ............................. [[32mPASS[0m in 0.40s]
+[0m00:14:21.560365 [debug] [Thread-1 (]: Finished running node test.my_weather_project.unique_weather_analytics_forecast_date.df98085381
+[0m00:14:21.562690 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:14:21.563191 [debug] [MainThread]: Connection 'test.my_weather_project.unique_weather_analytics_forecast_date.df98085381' was left open.
+[0m00:14:21.563672 [debug] [MainThread]: On test.my_weather_project.unique_weather_analytics_forecast_date.df98085381: Close
+[0m00:14:21.696210 [info ] [MainThread]: 
+[0m00:14:21.697442 [info ] [MainThread]: Finished running 2 data tests in 0 hours 0 minutes and 1.93 seconds (1.93s).
+[0m00:14:21.699072 [debug] [MainThread]: Command end result
+[0m00:14:21.730421 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m00:14:21.733996 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m00:14:21.745351 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt/target/run_results.json
+[0m00:14:21.745682 [info ] [MainThread]: 
+[0m00:14:21.746022 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:14:21.746886 [info ] [MainThread]: 
+[0m00:14:21.747195 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m00:14:21.748226 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 2.6767612, "process_in_blocks": "1120", "process_kernel_time": 0.196663, "process_mem_max_rss": "223716", "process_out_blocks": "2105", "process_user_time": 2.391067}
+[0m00:14:21.748600 [debug] [MainThread]: Command `dbt test` succeeded at 00:14:21.748536 after 2.68 seconds
+[0m00:14:21.748907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7f2073b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7c0d84a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff597dfa70>]}
+[0m00:14:21.749222 [debug] [MainThread]: Flushing usage events
+[0m00:14:22.124271 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:14:59.811988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff973c87a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff973c9a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff96c2ab70>]}
+
+
+============================== 00:14:59.815582 | a995e799-4c69-4df7-9e9b-4a50b6d7988c ==============================
+[0m00:14:59.815582 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m00:14:59.815899 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'partial_parse': 'True', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'version_check': 'True', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'no_print': 'None', 'profiles_dir': '/opt/airflow/dbt', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'empty': 'False', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'cache_selected_only': 'False', 'write_json': 'True', 'log_path': '/opt/airflow/dbt/logs', 'warn_error': 'None', 'invocation_command': 'dbt snapshot --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt'}
+[0m00:15:00.101697 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m00:15:00.102041 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m00:15:00.102263 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m00:15:00.191539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a995e799-4c69-4df7-9e9b-4a50b6d7988c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff996b9670>]}
+[0m00:15:00.221744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a995e799-4c69-4df7-9e9b-4a50b6d7988c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff96a6e210>]}
+[0m00:15:00.222173 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m00:15:00.264878 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m00:15:00.324908 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:15:00.325153 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:15:00.347477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a995e799-4c69-4df7-9e9b-4a50b6d7988c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff761f6480>]}
+[0m00:15:00.437970 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m00:15:00.440874 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m00:15:00.452935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a995e799-4c69-4df7-9e9b-4a50b6d7988c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff75de8230>]}
+[0m00:15:00.453202 [info ] [MainThread]: Found 2 models, 1 snapshot, 2 data tests, 1 source, 504 macros
+[0m00:15:00.453489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a995e799-4c69-4df7-9e9b-4a50b6d7988c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7605a510>]}
+[0m00:15:00.454476 [info ] [MainThread]: 
+[0m00:15:00.454708 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m00:15:00.454935 [info ] [MainThread]: 
+[0m00:15:00.455273 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:15:00.455717 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_POODLE'
+[0m00:15:00.472703 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE"
+[0m00:15:00.472956 [debug] [ThreadPool]: On list_USER_DB_POODLE: show terse schemas in database USER_DB_POODLE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE"} */
+[0m00:15:00.473149 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:15:01.120168 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.647 seconds
+[0m00:15:01.129356 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE, now list_USER_DB_POODLE_ANALYTICS)
+[0m00:15:01.144340 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS"
+[0m00:15:01.144902 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS: show objects in USER_DB_POODLE.ANALYTICS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS"} */;
+[0m00:15:01.350817 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.205 seconds
+[0m00:15:01.352313 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS, now list_USER_DB_POODLE_ANALYTICS_staging)
+[0m00:15:01.354330 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_POODLE_ANALYTICS_staging"
+[0m00:15:01.354582 [debug] [ThreadPool]: On list_USER_DB_POODLE_ANALYTICS_staging: show objects in USER_DB_POODLE.ANALYTICS_staging
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "connection_name": "list_USER_DB_POODLE_ANALYTICS_staging"} */;
+[0m00:15:01.684617 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.330 seconds
+[0m00:15:01.688876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a995e799-4c69-4df7-9e9b-4a50b6d7988c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9883c320>]}
+[0m00:15:01.695446 [debug] [Thread-1 (]: Began running node snapshot.my_weather_project.weather_snapshot
+[0m00:15:01.696317 [info ] [Thread-1 (]: 1 of 1 START snapshot ANALYTICS.weather_snapshot ............................... [RUN]
+[0m00:15:01.697007 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_POODLE_ANALYTICS_staging, now snapshot.my_weather_project.weather_snapshot)
+[0m00:15:01.697642 [debug] [Thread-1 (]: Began compiling node snapshot.my_weather_project.weather_snapshot
+[0m00:15:01.706509 [debug] [Thread-1 (]: Began executing node snapshot.my_weather_project.weather_snapshot
+[0m00:15:01.743016 [debug] [Thread-1 (]: Using snowflake connection "snapshot.my_weather_project.weather_snapshot"
+[0m00:15:01.743364 [debug] [Thread-1 (]: On snapshot.my_weather_project.weather_snapshot: select * from (
+        select max_temp, precipitation, wind_speed from (
+                
+
+
+
+select * from USER_DB_POODLE.RAW.weather_history
+
+            ) subq
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+[0m00:15:02.000565 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.257 seconds
+[0m00:15:02.009008 [debug] [Thread-1 (]: Using snowflake connection "snapshot.my_weather_project.weather_snapshot"
+[0m00:15:02.010073 [debug] [Thread-1 (]: On snapshot.my_weather_project.weather_snapshot: describe table "USER_DB_POODLE"."ANALYTICS"."WEATHER_SNAPSHOT"
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+[0m00:15:02.144298 [debug] [Thread-1 (]: SQL status: SUCCESS 9 in 0.133 seconds
+[0m00:15:02.147895 [debug] [Thread-1 (]: Using snowflake connection "snapshot.my_weather_project.weather_snapshot"
+[0m00:15:02.148227 [debug] [Thread-1 (]: On snapshot.my_weather_project.weather_snapshot: describe table "USER_DB_POODLE"."ANALYTICS"."WEATHER_SNAPSHOT"
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+[0m00:15:02.273189 [debug] [Thread-1 (]: SQL status: SUCCESS 9 in 0.125 seconds
+[0m00:15:02.300969 [debug] [Thread-1 (]: Using snowflake connection "snapshot.my_weather_project.weather_snapshot"
+[0m00:15:02.301338 [debug] [Thread-1 (]: On snapshot.my_weather_project.weather_snapshot: create or replace temporary table "USER_DB_POODLE"."ANALYTICS"."WEATHER_SNAPSHOT__dbt_tmp"
+as (
+    
+    
+    with snapshot_query as (
+
+        
+
+
+
+select * from USER_DB_POODLE.RAW.weather_history
+
+
+    ),
+
+    snapshotted_data as (
+
+        select *, 
+    
+        forecast_date as dbt_unique_key
+    
+
+        from "USER_DB_POODLE"."ANALYTICS"."WEATHER_SNAPSHOT"
+        where
+            
+                dbt_valid_to is null
+            
+
+    ),
+
+    insertions_source_data as (
+
+        select *, 
+    
+        forecast_date as dbt_unique_key
+    
+,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+            
+  
+  coalesce(nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))), null)
+  as dbt_valid_to
+,
+            md5(coalesce(cast(forecast_date as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id
+
+        from snapshot_query
+    ),
+
+    updates_source_data as (
+
+        select *, 
+    
+        forecast_date as dbt_unique_key
+    
+,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_to
+
+        from snapshot_query
+    ),
+
+    insertions as (
+
+        select
+            'insert' as dbt_change_type,
+            source_data.*
+
+        from insertions_source_data as source_data
+        left outer join snapshotted_data
+            on 
+    
+        snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+    
+
+            where 
+    
+        snapshotted_data.dbt_unique_key is null
+    
+
+            or (
+    
+        snapshotted_data.dbt_unique_key is not null
+    
+ and (
+               (snapshotted_data."MAX_TEMP" != source_data."MAX_TEMP"
+        or
+        (
+            ((snapshotted_data."MAX_TEMP" is null) and not (source_data."MAX_TEMP" is null))
+            or
+            ((not snapshotted_data."MAX_TEMP" is null) and (source_data."MAX_TEMP" is null))
+        ) or snapshotted_data."PRECIPITATION" != source_data."PRECIPITATION"
+        or
+        (
+            ((snapshotted_data."PRECIPITATION" is null) and not (source_data."PRECIPITATION" is null))
+            or
+            ((not snapshotted_data."PRECIPITATION" is null) and (source_data."PRECIPITATION" is null))
+        ) or snapshotted_data."WIND_SPEED" != source_data."WIND_SPEED"
+        or
+        (
+            ((snapshotted_data."WIND_SPEED" is null) and not (source_data."WIND_SPEED" is null))
+            or
+            ((not snapshotted_data."WIND_SPEED" is null) and (source_data."WIND_SPEED" is null))
+        ))
+            )
+
+        )
+
+    ),
+
+    updates as (
+
+        select
+            'update' as dbt_change_type,
+            source_data.*,
+            snapshotted_data.dbt_scd_id
+
+        from updates_source_data as source_data
+        join snapshotted_data
+            on 
+    
+        snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+    
+
+        where (
+            (snapshotted_data."MAX_TEMP" != source_data."MAX_TEMP"
+        or
+        (
+            ((snapshotted_data."MAX_TEMP" is null) and not (source_data."MAX_TEMP" is null))
+            or
+            ((not snapshotted_data."MAX_TEMP" is null) and (source_data."MAX_TEMP" is null))
+        ) or snapshotted_data."PRECIPITATION" != source_data."PRECIPITATION"
+        or
+        (
+            ((snapshotted_data."PRECIPITATION" is null) and not (source_data."PRECIPITATION" is null))
+            or
+            ((not snapshotted_data."PRECIPITATION" is null) and (source_data."PRECIPITATION" is null))
+        ) or snapshotted_data."WIND_SPEED" != source_data."WIND_SPEED"
+        or
+        (
+            ((snapshotted_data."WIND_SPEED" is null) and not (source_data."WIND_SPEED" is null))
+            or
+            ((not snapshotted_data."WIND_SPEED" is null) and (source_data."WIND_SPEED" is null))
+        ))
+        )
+    )
+
+    select * from insertions
+    union all
+    select * from updates
+
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */;
+[0m00:15:03.640670 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.339 seconds
+[0m00:15:03.645051 [debug] [Thread-1 (]: Using snowflake connection "snapshot.my_weather_project.weather_snapshot"
+[0m00:15:03.645484 [debug] [Thread-1 (]: On snapshot.my_weather_project.weather_snapshot: describe table "USER_DB_POODLE"."ANALYTICS"."WEATHER_SNAPSHOT__dbt_tmp"
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+[0m00:15:03.846934 [debug] [Thread-1 (]: SQL status: SUCCESS 11 in 0.201 seconds
+[0m00:15:03.854080 [debug] [Thread-1 (]: Using snowflake connection "snapshot.my_weather_project.weather_snapshot"
+[0m00:15:03.854766 [debug] [Thread-1 (]: On snapshot.my_weather_project.weather_snapshot: describe table "USER_DB_POODLE"."ANALYTICS"."WEATHER_SNAPSHOT"
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+[0m00:15:04.073345 [debug] [Thread-1 (]: SQL status: SUCCESS 9 in 0.218 seconds
+[0m00:15:04.080971 [debug] [Thread-1 (]: Using snowflake connection "snapshot.my_weather_project.weather_snapshot"
+[0m00:15:04.081630 [debug] [Thread-1 (]: On snapshot.my_weather_project.weather_snapshot: describe table "USER_DB_POODLE"."ANALYTICS"."WEATHER_SNAPSHOT__dbt_tmp"
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+[0m00:15:04.199252 [debug] [Thread-1 (]: SQL status: SUCCESS 11 in 0.117 seconds
+[0m00:15:04.203682 [debug] [Thread-1 (]: Using snowflake connection "snapshot.my_weather_project.weather_snapshot"
+[0m00:15:04.204261 [debug] [Thread-1 (]: On snapshot.my_weather_project.weather_snapshot: describe table "USER_DB_POODLE"."ANALYTICS"."WEATHER_SNAPSHOT"
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+[0m00:15:04.428376 [debug] [Thread-1 (]: SQL status: SUCCESS 9 in 0.224 seconds
+[0m00:15:04.436523 [debug] [Thread-1 (]: Using snowflake connection "snapshot.my_weather_project.weather_snapshot"
+[0m00:15:04.437074 [debug] [Thread-1 (]: On snapshot.my_weather_project.weather_snapshot: describe table "USER_DB_POODLE"."ANALYTICS"."WEATHER_SNAPSHOT__dbt_tmp"
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+[0m00:15:05.008635 [debug] [Thread-1 (]: SQL status: SUCCESS 11 in 0.571 seconds
+[0m00:15:05.032211 [debug] [Thread-1 (]: Using snowflake connection "snapshot.my_weather_project.weather_snapshot"
+[0m00:15:05.032929 [debug] [Thread-1 (]: On snapshot.my_weather_project.weather_snapshot: select * from (
+        
+    
+    with snapshot_query as (
+
+        
+
+
+
+select * from USER_DB_POODLE.RAW.weather_history
+
+
+    ),
+
+    snapshotted_data as (
+
+        select *, 
+    
+        forecast_date as dbt_unique_key
+    
+
+        from "USER_DB_POODLE"."ANALYTICS"."WEATHER_SNAPSHOT"
+        where
+            
+                dbt_valid_to is null
+            
+
+    ),
+
+    insertions_source_data as (
+
+        select *, 
+    
+        forecast_date as dbt_unique_key
+    
+,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+            
+  
+  coalesce(nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))), null)
+  as dbt_valid_to
+,
+            md5(coalesce(cast(forecast_date as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id
+
+        from snapshot_query
+    ),
+
+    updates_source_data as (
+
+        select *, 
+    
+        forecast_date as dbt_unique_key
+    
+,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_to
+
+        from snapshot_query
+    ),
+
+    insertions as (
+
+        select
+            'insert' as dbt_change_type,
+            source_data.*
+
+        from insertions_source_data as source_data
+        left outer join snapshotted_data
+            on 
+    
+        snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+    
+
+            where 
+    
+        snapshotted_data.dbt_unique_key is null
+    
+
+            or (
+    
+        snapshotted_data.dbt_unique_key is not null
+    
+ and (
+               (snapshotted_data."MAX_TEMP" != source_data."MAX_TEMP"
+        or
+        (
+            ((snapshotted_data."MAX_TEMP" is null) and not (source_data."MAX_TEMP" is null))
+            or
+            ((not snapshotted_data."MAX_TEMP" is null) and (source_data."MAX_TEMP" is null))
+        ) or snapshotted_data."PRECIPITATION" != source_data."PRECIPITATION"
+        or
+        (
+            ((snapshotted_data."PRECIPITATION" is null) and not (source_data."PRECIPITATION" is null))
+            or
+            ((not snapshotted_data."PRECIPITATION" is null) and (source_data."PRECIPITATION" is null))
+        ) or snapshotted_data."WIND_SPEED" != source_data."WIND_SPEED"
+        or
+        (
+            ((snapshotted_data."WIND_SPEED" is null) and not (source_data."WIND_SPEED" is null))
+            or
+            ((not snapshotted_data."WIND_SPEED" is null) and (source_data."WIND_SPEED" is null))
+        ))
+            )
+
+        )
+
+    ),
+
+    updates as (
+
+        select
+            'update' as dbt_change_type,
+            source_data.*,
+            snapshotted_data.dbt_scd_id
+
+        from updates_source_data as source_data
+        join snapshotted_data
+            on 
+    
+        snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+    
+
+        where (
+            (snapshotted_data."MAX_TEMP" != source_data."MAX_TEMP"
+        or
+        (
+            ((snapshotted_data."MAX_TEMP" is null) and not (source_data."MAX_TEMP" is null))
+            or
+            ((not snapshotted_data."MAX_TEMP" is null) and (source_data."MAX_TEMP" is null))
+        ) or snapshotted_data."PRECIPITATION" != source_data."PRECIPITATION"
+        or
+        (
+            ((snapshotted_data."PRECIPITATION" is null) and not (source_data."PRECIPITATION" is null))
+            or
+            ((not snapshotted_data."PRECIPITATION" is null) and (source_data."PRECIPITATION" is null))
+        ) or snapshotted_data."WIND_SPEED" != source_data."WIND_SPEED"
+        or
+        (
+            ((snapshotted_data."WIND_SPEED" is null) and not (source_data."WIND_SPEED" is null))
+            or
+            ((not snapshotted_data."WIND_SPEED" is null) and (source_data."WIND_SPEED" is null))
+        ))
+        )
+    )
+
+    select * from insertions
+    union all
+    select * from updates
+
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+[0m00:15:05.378718 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.345 seconds
+[0m00:15:05.380795 [debug] [Thread-1 (]: Using snowflake connection "snapshot.my_weather_project.weather_snapshot"
+[0m00:15:05.381052 [debug] [Thread-1 (]: On snapshot.my_weather_project.weather_snapshot: select * from (
+        select to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_snapshot_time
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+[0m00:15:05.466826 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.085 seconds
+[0m00:15:05.467302 [debug] [Thread-1 (]: Writing runtime sql for node "snapshot.my_weather_project.weather_snapshot"
+[0m00:15:05.468496 [debug] [Thread-1 (]: Using snowflake connection "snapshot.my_weather_project.weather_snapshot"
+[0m00:15:05.468673 [debug] [Thread-1 (]: On snapshot.my_weather_project.weather_snapshot: BEGIN
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+[0m00:15:05.596734 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.128 seconds
+[0m00:15:05.597114 [debug] [Thread-1 (]: Using snowflake connection "snapshot.my_weather_project.weather_snapshot"
+[0m00:15:05.597397 [debug] [Thread-1 (]: On snapshot.my_weather_project.weather_snapshot: merge into "USER_DB_POODLE"."ANALYTICS"."WEATHER_SNAPSHOT" as DBT_INTERNAL_DEST
+    using "USER_DB_POODLE"."ANALYTICS"."WEATHER_SNAPSHOT__dbt_tmp" as DBT_INTERNAL_SOURCE
+    on DBT_INTERNAL_SOURCE.dbt_scd_id = DBT_INTERNAL_DEST.dbt_scd_id
+
+    when matched
+     
+       and DBT_INTERNAL_DEST.dbt_valid_to is null
+     
+     and DBT_INTERNAL_SOURCE.dbt_change_type in ('update', 'delete')
+        then update
+        set dbt_valid_to = DBT_INTERNAL_SOURCE.dbt_valid_to
+
+    when not matched
+     and DBT_INTERNAL_SOURCE.dbt_change_type = 'insert'
+        then insert ("FORECAST_DATE", "MAX_TEMP", "MIN_TEMP", "PRECIPITATION", "WIND_SPEED", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO", "DBT_SCD_ID")
+        values ("FORECAST_DATE", "MAX_TEMP", "MIN_TEMP", "PRECIPITATION", "WIND_SPEED", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO", "DBT_SCD_ID")
+
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */;
+[0m00:15:06.287340 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.689 seconds
+[0m00:15:06.288740 [debug] [Thread-1 (]: Using snowflake connection "snapshot.my_weather_project.weather_snapshot"
+[0m00:15:06.289293 [debug] [Thread-1 (]: On snapshot.my_weather_project.weather_snapshot: COMMIT
+/* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "my_weather_project", "target_name": "dev", "node_id": "snapshot.my_weather_project.weather_snapshot"} */
+[0m00:15:06.814539 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.524 seconds
+[0m00:15:06.833895 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a995e799-4c69-4df7-9e9b-4a50b6d7988c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff996b8920>]}
+[0m00:15:06.834722 [info ] [Thread-1 (]: 1 of 1 OK snapshotted ANALYTICS.weather_snapshot ............................... [[32mSUCCESS 0[0m in 5.14s]
+[0m00:15:06.835349 [debug] [Thread-1 (]: Finished running node snapshot.my_weather_project.weather_snapshot
+[0m00:15:06.836608 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:15:06.836890 [debug] [MainThread]: Connection 'snapshot.my_weather_project.weather_snapshot' was left open.
+[0m00:15:06.837169 [debug] [MainThread]: On snapshot.my_weather_project.weather_snapshot: Close
+[0m00:15:07.073296 [info ] [MainThread]: 
+[0m00:15:07.074595 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 6.62 seconds (6.62s).
+[0m00:15:07.076236 [debug] [MainThread]: Command end result
+[0m00:15:07.110310 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/target/manifest.json
+[0m00:15:07.112791 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/target/semantic_manifest.json
+[0m00:15:07.117944 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt/target/run_results.json
+[0m00:15:07.118206 [info ] [MainThread]: 
+[0m00:15:07.118556 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:15:07.118908 [info ] [MainThread]: 
+[0m00:15:07.119241 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m00:15:07.120226 [debug] [MainThread]: Resource report: {"command_name": "snapshot", "command_success": true, "command_wall_clock_time": 7.3450727, "process_in_blocks": "8", "process_kernel_time": 0.21204, "process_mem_max_rss": "223960", "process_out_blocks": "2129", "process_user_time": 2.549492}
+[0m00:15:07.120583 [debug] [MainThread]: Command `dbt snapshot` succeeded at 00:15:07.120522 after 7.35 seconds
+[0m00:15:07.120867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9b9f73e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff79101cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff76240260>]}
+[0m00:15:07.121123 [debug] [MainThread]: Flushing usage events
+[0m00:15:07.555154 [debug] [MainThread]: An error was encountered while trying to flush usage events
